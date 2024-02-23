@@ -49,7 +49,6 @@ body {
   background-color: #1a73e8;
   cursor: pointer;
   color: #fff;
-  ;
 }
 
 .ul1 a {
@@ -59,4 +58,8 @@ body {
 
 .ul1 a:hover {
   color: #f1f1f1;
+}
+
+.logo-name:hover {
+  cursor: pointer;
 }
