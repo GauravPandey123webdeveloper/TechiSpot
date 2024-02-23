@@ -1,0 +1,60 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "poppins", sans-serif;
+  background-color: #1c1d1f;
+}
+
+.navigation {
+  background-color: rgba(24, 21, 21, 0.705);
+  color: white;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+}
+
+.ul1 {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  list-style: none;
+  font-size: 1.2em;
+}
+
+.logo-name {
+  text-transform: uppercase;
+  font-size: 2em;
+  margin-right: auto;
+}
+
+.icn {
+  height: 2em;
+  margin-right: 5px;
+}
+.icon {
+  height: 1.5em;
+  margin-right: 5px;
+  color: aliceblue;
+}
+
+.ul1 li {
+  padding: 5px 10px;
+  border-radius: 30px;
+  transition: background-color 0.4s ease;
+}
+
+.ul1 li:hover {
+  background-color: #1a73e8;
+  cursor: pointer;
+  color: #fff;;
+}
+
+.ul1 a {
+  text-decoration: none;
+  color: white;
+}
+
+.ul1 a:hover {
+  color: #f1f1f1;
+}
