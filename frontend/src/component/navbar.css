@@ -32,6 +32,7 @@ body {
   height: 2em;
   margin-right: 5px;
 }
+
 .icon {
   height: 1.5em;
   margin-right: 5px;
@@ -47,7 +48,8 @@ body {
 .ul1 li:hover {
   background-color: #1a73e8;
   cursor: pointer;
-  color: #fff;;
+  color: #fff;
+  ;
 }
 
 .ul1 a {
