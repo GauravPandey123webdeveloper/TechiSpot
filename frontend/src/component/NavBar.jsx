@@ -1,41 +1,46 @@
-
-import meme from "./icons/meme.png";
-import news from "./icons/news.png";
-import note from "./icons/notes.png";
-import tech from "./icons/tech.png";
-import home from "./icons/home.png";
-
+import meme from "../assets/meme.png";
+import news from "../assets/news.png";
+import note from "../assets/notes.png";
+import tech from "../assets/tech.png";
+import home from "../assets/home.png";
+import styles from "./NavBar.module.css";
 export default function NavBar() {
   return (
     <>
-      <nav className="navigation">
-        <img src={tech} alt="tech" className="icn"></img>
-        <div className="logo-name">TechiSpot</div>
-        <ul class="ul1">
-          <li class="lia">
-            <a href="/">
-              {" "}
-              <img src={home} alt="home" className="icon"></img>
-              Home
-            </a>
-          </li>
-          <li class="lib">
-            <a href="/">
-              <img src={news} alt="news" className="icon"></img>
-              Tech News
-            </a>
-          </li>
-          <li class="lic">
-            <img src={meme} alt="Meme" className="icon"></img>
-            <a href="/">
-              <meme></meme> Tech Memes
-            </a>
-          </li>
-          <li class="lid">
-            <img src={note} alt="notes" className="icon"></img>
-            <a href="/">Tech Notes</a>
-          </li>
-        </ul>
+      <nav className={styles.navigation}>
+        <div className={styles.logo}>
+          <img src={tech} alt="tech" className={styles.icn}/>
+          <div className={styles.logoName}>TechiSpot</div>
+        </div>
+        <div className={styles.menu}>
+          <ul className={styles.ul1}>
+            <li className={styles.lia}>
+              <a href="/">
+                {" "}
+                <img src={home} alt="home" className={styles.icon}></img>
+               <span className={styles.menuText}> Home</span>
+              </a>
+            </li>
+            <li className={styles.lib}>
+              <a href="/">
+                <img src={news} alt="news" className={styles.icon}></img>
+               <span className={styles.menuText}>Tech news</span>
+              </a>
+            </li>
+            <li className={styles.lic}>
+              <img src={meme} alt="Meme" className={styles.icon}></img>
+              <a href="/">
+                  <span className={styles.menuText}>Tech memes</span>
+              </a>
+            </li>
+            <li class="lid">
+              <img src={note} alt="notes" className={styles.icon}></img>
+              <a href="/">
+                <span className={styles.menuText}> Tech Notes</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </>
   );
