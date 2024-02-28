@@ -1,0 +1,6 @@
+.team{
+    flex: 25%;
+    box-shadow: 0px 0px 10px;
+    height: 90vh;
+    border-radius: 0px 10px 0px 0px;
+}

@@ -1,21 +1,5 @@
 .homepage{
     display: flex;
+    margin-top: 10vh;
 }
-.sidenav{
-    flex: 20%;
-    box-shadow: 0px 0px 10px;
-    height: 90vh;
-    border-radius: 10px;
-}
-.post{
-    flex: 60%;
-    box-shadow: 0px 0px 4px;
-    height: 90vh;
-    border-radius: 10px;
-}
-.team{
-    flex: 20%;
-    box-shadow: 0px 0px 10px;
-    height: 90vh;
-    border-radius: 10px;
-}
+

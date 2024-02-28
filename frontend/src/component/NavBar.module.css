@@ -6,6 +6,10 @@
   align-items: center;
   padding: 12px;
   box-sizing: border-box;
+  position: fixed;
+  top:0;
+  z-index: 100;
+  width: 100vw;
 }
 .logo{
   flex: 20%;

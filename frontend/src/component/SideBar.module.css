@@ -1,0 +1,21 @@
+.sidenav{
+    flex: 25%;
+    box-shadow: 0px 0px 10px;
+    height: 90vh;
+    border-radius: 10px 0px 0px 0px;
+    position: fixed;
+}
+.sidemenu{
+    list-style: none;
+    padding: 2vh 2vw 10vh;
+    font-size: 1.5rem;
+}
+.courseItem{
+    margin-top: 1.3vh;
+}
+.courseItem:hover{
+    box-shadow: 0px 0px 5px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    color: black;
+}

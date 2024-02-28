@@ -1,19 +1,40 @@
+import React from 'react'
+import styles from './Post.module.css'
 export default function Post() {
   return (
-    <>
-      <div className="card container" style={{ width: "45rem" }}>
-        <img src="https://t4.ftcdn.net/jpg/02/10/96/95/360_F_210969565_cIHkcrIzRpWNZzq8eaQnYotG4pkHh0P9.jpg" className="card-img-top" alt="..." />
-        <div className="card-body">
-          <h5 className="card-title">Card title</h5>
-          <p className="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" className="btn btn-primary">
-            Go somewhere
-          </a>
-        </div>
+    <div className={styles.post}>
+     <div className={styles.userpost}>
+     <img src="https://media.licdn.com/dms/image/D4D12AQG56UPUtPJj0w/article-cover_image-shrink_600_2000/0/1669373321238?e=2147483647&v=beta&t=uUMorY6yjVASSX_Iy-VNu8eXkAMfkmY97PWk7zDKR0w" alt="news image"  className={styles.pstimg}/>
+      <div className={styles.reactions}>
+        <i className="fa-regular fa-heart"></i>
+        <i className="fa-regular fa-comments"></i>
+        <i className="fa-regular fa-share-from-square"></i>
       </div>
-    </>
-  );
+     </div>
+     <div className={styles.userpost}>
+     <img src="https://media.licdn.com/dms/image/D4D12AQG56UPUtPJj0w/article-cover_image-shrink_600_2000/0/1669373321238?e=2147483647&v=beta&t=uUMorY6yjVASSX_Iy-VNu8eXkAMfkmY97PWk7zDKR0w" alt="news image"  className={styles.pstimg}/>
+      <div className={styles.reactions}>
+        <i className="fa-regular fa-heart"></i>
+        <i className="fa-regular fa-comments"></i>
+        <i className="fa-regular fa-share-from-square"></i>
+      </div>
+     </div>
+     <div className={styles.userpost}>
+     <img src="https://media.licdn.com/dms/image/D4D12AQG56UPUtPJj0w/article-cover_image-shrink_600_2000/0/1669373321238?e=2147483647&v=beta&t=uUMorY6yjVASSX_Iy-VNu8eXkAMfkmY97PWk7zDKR0w" alt="news image"  className={styles.pstimg}/>
+      <div className={styles.reactions}>
+        <i className="fa-regular fa-heart"></i>
+        <i className="fa-regular fa-comments"></i>
+        <i className="fa-regular fa-share-from-square"></i>
+      </div>
+     </div>
+     <div className={styles.userpost}>
+     <img src="https://media.licdn.com/dms/image/D4D12AQG56UPUtPJj0w/article-cover_image-shrink_600_2000/0/1669373321238?e=2147483647&v=beta&t=uUMorY6yjVASSX_Iy-VNu8eXkAMfkmY97PWk7zDKR0w" alt="news image"  className={styles.pstimg}/>
+      <div className={styles.reactions}>
+        <i className="fa-regular fa-heart"></i>
+        <i className="fa-regular fa-comments"></i>
+        <i className="fa-regular fa-share-from-square"></i>
+      </div>
+     </div>
+    </div>
+  )
 }
