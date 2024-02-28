@@ -4,6 +4,8 @@
     height: 90vh;
     padding: 2vh;
     margin-left: 25%;
+    margin-top: 20px;
+    overflow-y: auto;
 }
 .reactions{
     box-shadow: 0px 0px 5px;
@@ -18,5 +20,13 @@
     width: 100%;
 }
 .userpost{
-    /* border: 1px solid white; */
+   scroll-behavior: smooth;
+}
+@media screen and (max-width:600px){
+   .post{
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 65px;
+    display: block;
+   }
 }
