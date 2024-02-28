@@ -1,15 +1,17 @@
-import NavBar from "./component/NavBar";
-import Post from "./component/Post";
-import styles from './App.module.css';
+import { Routes,Route } from "react-router-dom";
+import Home from "./home/Home";
+import News from "./news/News";
+import Meme from "./memes/Meme";
+import Notes from "./notes/Notes";
 function App() {
   return (
     <>
-      <NavBar />
-      <div className={styles.homepage}>
-        <div className={styles.sidenav}>course menu</div>
-        <div className={styles.post}>Post</div>
-        <div className={styles.team}>Team</div>
-      </div>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/news" element={<News/>}/>
+        <Route path="/meme" element={<Meme/>}/>
+        <Route path="/notes" element={<Notes/>}/>
+      </Routes>
     </>
   );
 }
