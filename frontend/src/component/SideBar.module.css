@@ -15,6 +15,7 @@
     font-size: 1.5rem;
 }
 .courseItem a{
+    color: white;
     margin-top: 1.3vh;
     outline: none;
     text-decoration: none;
@@ -23,7 +24,7 @@
 .courseItem:hover{
     box-shadow: 0px 0px 5px;
     border-radius: 10px;
-    background-color: aliceblue;
+    background-color: rgb(6, 133, 244);
     color: black;
 }
 @media screen and (max-width:600px) {
