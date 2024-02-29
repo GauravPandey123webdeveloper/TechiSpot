@@ -1,0 +1,59 @@
+.breakingNews{
+    margin-left: 75lvw;
+    margin-top: 10vh;
+    font-size: 30px;
+    box-shadow: 0px 0px 10px;
+    height: 90vh;
+    padding-top: 10px;
+    scroll-behavior: auto;
+    overflow-y: scroll;
+}
+.heading{
+    background-color: rgb(222, 20, 20);
+    text-align: center;
+    margin-bottom: 5px;
+    position: sticky;
+    top: 0;
+    margin-top: 0px;
+}
+.heading:hover{
+    box-shadow: 5px 5px 20px;
+    background-color: red;
+    border-radius: 10px;
+    width: 25vw;
+}
+.ul{
+    list-style: none;
+}
+.breaking_list{
+    margin-right: 40px;
+    list-style: none;
+    font-style: italic;
+    text-align: center;
+}
+
+
+
+
+.breaking_news_post{
+    text-align: center;
+   padding-top: 2%;
+   position: fixed;
+   height: 100vh;
+   top: 20;
+   overflow: auto;
+   width:400px
+   
+
+
+}
+.breaking:hover{
+    text-decoration: underline;
+    color: rgb(233, 209, 23);
+    border-radius: 100px outset;
+    box-shadow: 0px 0px 100px rgb(141, 4, 4);
+
+}
+
+
+
