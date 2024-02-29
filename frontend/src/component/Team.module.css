@@ -1,6 +1,44 @@
-.team{
-    flex: 25%;
-    box-shadow: 0px 0px 10px;
-    height: 90vh;
-    border-radius: 0px 10px 0px 0px;
+.team {
+  width: 25vw;
+  box-shadow: 0px 0px 10px;
+  height: 92vh;
+  border-radius: 0px 10px 0px 0px;
+  position: fixed;
+  right: 0;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+
+.team::-webkit-scrollbar {
+  width: 10px;
+}
+
+.team::-webkit-scrollbar-track {
+  background: black;
+}
+
+.team::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 5px;
+}
+
+.team::-webkit-scrollbar-thumb:hover {
+  background: rgb(97, 95, 95);
+}
+
+.h1 {
+  text-align: center;
+  width: 25vw;
+  position: fixed;
+  background-color: #1c1d1f;
+  z-index: 10;
+  box-shadow: 0px 0px 10px inset;
+  padding-top: 1.5vh;
+}
+
+.cards {
+  margin-top: 9vh;
+  top: 50;
+  position: relative;
+  z-index: 0;
 }
