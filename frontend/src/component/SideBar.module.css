@@ -26,3 +26,8 @@
     background-color: aliceblue;
     color: black;
 }
+@media screen and (max-width:600px) {
+    .sidenav{
+        display: none;
+    }
+}

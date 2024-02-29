@@ -23,7 +23,7 @@
   margin: 2vh 0.5vw;
   box-shadow: 0px 0px 5px white;
   padding: 1vh;
-  border-radius: 25vh;
+  border-radius: 10px;
   height: auto;
   transition: 600ms ease-out;
 }

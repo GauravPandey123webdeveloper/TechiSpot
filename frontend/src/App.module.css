@@ -1,5 +1,6 @@
 .homepage{
     display: flex;
+    box-sizing: border-box;
 }
 .sidenav{
     flex: 20%;
