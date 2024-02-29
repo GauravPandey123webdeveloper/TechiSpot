@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './SideBar.module.css';
 import { Link } from 'react-router-dom';
-import Meme from '../memes/Meme'
+
 export default function SideBar() {
   return (
     <div className={styles.sidenav}>
         <ul className={styles.sidemenu}>
-            <li className={styles.courseItem}> 
+            <li className={styles.courseItem}>
             <Link to='/notes'>Html</Link>
             </li>
             <li className={styles.courseItem}> <Link to='/notes'>CSS</Link></li>
@@ -32,8 +32,8 @@ export default function SideBar() {
     </div>
   )
 }
-{/* <li className={styles.lia}>
+/* <li className={styles.lia}>
               <Link to="/">
                 <img src={home} alt="home" className={styles.icon}></img>
                <span className={styles.menuText}> Home</span>
-              </Link> */}
+              </Link> */
