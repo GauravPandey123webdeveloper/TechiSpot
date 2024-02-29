@@ -1,0 +1,18 @@
+.errorContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .errorMessage {
+    font-size: 2rem;
+    color: #ff0000; /* Red color for emphasis */
+    padding: 20px;
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+    background-color: #ffe5e5; /* Light red background */
+    max-width: 400px;
+    margin: auto;
+  }
