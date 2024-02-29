@@ -15,6 +15,7 @@ export default function Post() {
       <div className={styles.emojis}> 
         <i class="fa-regular fa-image" ></i>
         <i class="fa-regular fa-face-smile"></i>
+        <i class="fa-regular fa-calendar-days"></i>
         <button className={styles.Postbtn}>Post</button>
       </div>
 <hr />
@@ -23,7 +24,7 @@ export default function Post() {
       <div className={styles.reactions}>
         <i className="fa-regular fa-heart"></i>
         <i class="fa-regular fa-comment"></i>
-        <i class="fa-regular fa-share-from-square"></i>
+        <i class="fa-regular fa-share-from-square"></i><i class="fa-solid fa-repeat"></i>
         <i class="fa-regular fa-bookmark"></i>
       </div>
      </div>
@@ -33,6 +34,7 @@ export default function Post() {
         <i className="fa-regular fa-heart"></i>
         <i class="fa-regular fa-comment"></i>
         <i class="fa-regular fa-share-from-square"></i>
+        <i class="fa-solid fa-repeat"></i>
         <i class="fa-regular fa-bookmark"></i>
       </div>
      </div>

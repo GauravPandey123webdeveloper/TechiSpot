@@ -11,8 +11,8 @@
     display: flex;
     justify-content: space-around;
     padding: 1vh;
-
 }
+
 .pstimg{
     box-shadow: 0px 0px 2px;
     width: 100%;
@@ -29,9 +29,8 @@
     padding: 2px;
 }
 
-
 .Input {
-    width: 350%;  
+    width: 360%;  
     padding: 12px 16px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -54,9 +53,12 @@
     background-color: #0d8ecf; /* Darker shade of blue on hover */
 }
 
-
 .emojis{
     font-size: 1.5rem;
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-around;  
 }
+
+
+
+
