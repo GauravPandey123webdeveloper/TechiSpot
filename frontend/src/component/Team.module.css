@@ -9,9 +9,21 @@
   scroll-behavior: smooth;
 }
 
-.cards::-webkit-scrollbar {
-  width: 12px;
-  color: red;
+.team::-webkit-scrollbar {
+  width: 10px;
+}
+
+.team::-webkit-scrollbar-track {
+  background: black;
+}
+
+.team::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 5px;
+}
+
+.team::-webkit-scrollbar-thumb:hover {
+  background: rgb(97, 95, 95);
 }
 
 .h1 {
