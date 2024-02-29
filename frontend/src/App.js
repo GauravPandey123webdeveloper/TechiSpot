@@ -3,6 +3,8 @@ import Home from "./home/Home";
 import News from "./news/News";
 import Meme from "./memes/Meme";
 import Notes from "./notes/Notes";
+
+
 import Error from "./error/Error";
 function App() {
   return (
