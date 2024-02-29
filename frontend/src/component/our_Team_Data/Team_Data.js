@@ -83,6 +83,13 @@ let data = [
     about: "Front End Developer",
     linkedin: "https://www.linkedin.com/in/purnima-baroi-0882072aa/",
     git: "https://github.com/purniiiima",
+  },
+  {
+    name: "Ayush Srivastava",
+    pro: "./Team_Profile_Pic/Ayush_Srivastava.jpeg",
+    about: "Front End Developer",
+    linkedin: "https://www.linkedin.com/in/ayushsrivastava0609/",
+    git: "https://github.com/AyushSrivastava0609",
   }
 ];
 export default data;
