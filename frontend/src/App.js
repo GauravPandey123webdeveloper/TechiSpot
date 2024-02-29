@@ -3,6 +3,7 @@ import Home from "./home/Home";
 import News from "./news/News";
 import Meme from "./memes/Meme";
 import Notes from "./notes/Notes";
+import Error from "./error/Error";
 function App() {
   return (
     <>
@@ -11,6 +12,7 @@ function App() {
         <Route path="/news" element={<News/>}/>
         <Route path="/meme" element={<Meme/>}/>
         <Route path="/notes" element={<Notes/>}/>
+        <Route path="*" element={<Error/>}/>
       </Routes>
     </>
   );
