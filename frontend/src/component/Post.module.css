@@ -17,6 +17,46 @@
     box-shadow: 0px 0px 2px;
     width: 100%;
 }
-.userpost{
-    /* border: 1px solid white; */
+
+.newPost{
+    margin-top: 10px;
+}
+
+
+.userDP{
+    border-radius: 100px;
+    width: 60px;
+    padding: 2px;
+}
+
+
+.Input {
+    width: 350%;  
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    outline: none;
+}
+
+.Postbtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #1da1f2; /* Twitter blue */
+    color: #fff;
+    border: none;
+    border-radius: 25px; /* Adjust as needed */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.Postbtn:hover {
+    background-color: #0d8ecf; /* Darker shade of blue on hover */
+}
+
+
+.emojis{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around; 
 }
