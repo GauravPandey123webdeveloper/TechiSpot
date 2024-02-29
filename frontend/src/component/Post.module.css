@@ -17,6 +17,46 @@
     box-shadow: 0px 0px 2px;
     width: 100%;
 }
-.userpost{
-    /* border: 1px solid white; */
-}
+.userpost {
+    padding: 16px;
+  }
+
+  .profileContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .profilePic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .username {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .bio {
+    color: #657786;
+    margin-bottom: 16px;
+  }
+  
+  .followButton {
+    background-color: #1f2122;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+    margin-left: 400px;
+  }
+  
+  .followButton:hover {
+    background-color: #8c98a4;
+  }
