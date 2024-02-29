@@ -1,7 +1,7 @@
 .post{
     flex: 50%;
     box-shadow: 0px 0px 10px;
-    height: 90vh;
+    height: 100%vh;
     padding: 2vh;
     margin-left: 25%;
 }
@@ -11,12 +11,18 @@
     display: flex;
     justify-content: space-around;
     padding: 1vh;
+    border-radius: 1.5vh;
 
+}
+.postHeader{
+    text-align: center;
 }
 .pstimg{
     box-shadow: 0px 0px 2px;
     width: 100%;
+    border-radius: 1.5vh;
 }
 .userpost{
     /* border: 1px solid white; */
+    padding-bottom: 2vh;
 }
