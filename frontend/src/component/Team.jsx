@@ -1,9 +1,13 @@
-import React from 'react';
+import React from "react";
 import styles from "./Team.module.css";
+import TeamCard from "./our_Team_Data/TeamCard";
 export default function Team() {
   return (
     <div className={styles.team}>
-        Team
+        <div className={styles.h1}><h1>Our Team</h1></div>
+        <div className={styles.cards}>
+      <TeamCard/>
     </div>
-  )
+    </div>
+  );
 }

@@ -1,98 +1,97 @@
-.post{
-    flex: 50%;
-    box-shadow: 0px 0px 10px;
-    height: 90vh;
-    padding: 2vh;
-    margin-left: 25%;
+.post {
+  width: 48.5vw;
+  box-shadow: 0px 0px 10px;
+  height: auto;
+  padding: 2vh;
+  margin-left: 25.5%;
 }
-.reactions{
-    box-shadow: 0px 0px 5px;
-    font-size: 2rem;
-    display: flex;
-    justify-content: space-around;
-    padding: 1vh;
-
+.reactions {
+  box-shadow: 0px 0px 5px;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-around;
+  padding: 1vh;
 }
-.pstimg{
-    box-shadow: 0px 0px 2px;
-    width: 100%;
+.pstimg {
+  box-shadow: 0px 0px 2px;
+  width: 100%;
 }
 .userpost {
-    padding: 16px;
-  }
+  padding: 16px;
+}
 
-  .profileContainer {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-  
-  .profilePic {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 8px;
-    margin-bottom: 8px;
-  }
-  
-  .username {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 8px;
-  }
-  
-  .bio {
-    color: #657786;
-    margin-bottom: 16px;
-  }
-  
-  .followButton {
-    background-color: #1f2122;
-    color: #fff;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s; 
-    margin-left: 400px;
-  }
-  
-  .followButton:hover {
-    background-color: #8c98a4;
-  }
+.profileContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 
-  .userDP{
-    border-radius: 100px;
-    width: 60px;
-    padding: 2px;
+.profilePic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.username {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.bio {
+  color: #657786;
+  margin-bottom: 16px;
+}
+
+.followButton {
+  background-color: #1f2122;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 400px;
+}
+
+.followButton:hover {
+  background-color: #8c98a4;
+}
+
+.userDP {
+  border-radius: 100px;
+  width: 60px;
+  padding: 2px;
 }
 
 .Input {
-    width: 360%;  
-    padding: 12px 16px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 100px;
-    outline: none;
+  width: 360%;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  outline: none;
 }
 
 .Postbtn {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #1da1f2; /* Twitter blue */
-    color: #fff;
-    border: none;
-    border-radius: 25px; /* Adjust as needed */
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #1da1f2; /* Twitter blue */
+  color: #fff;
+  border: none;
+  border-radius: 25px; /* Adjust as needed */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .Postbtn:hover {
-    background-color: #0d8ecf; /* Darker shade of blue on hover */
+  background-color: #0d8ecf; /* Darker shade of blue on hover */
 }
 
-.emojis{
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: space-around;  
+.emojis {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-around;
 }
