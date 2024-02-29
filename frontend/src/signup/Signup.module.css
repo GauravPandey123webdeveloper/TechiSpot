@@ -1,0 +1,103 @@
+.box{
+    border: 2px solid white;
+    width: 350px;
+    margin: auto;
+    margin-top: 60px;
+    height: 650px;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px rgb(131, 129, 129);
+}
+.logobox{
+    width: 120px;
+    margin: auto;
+    margin-top: 20px;
+    height: 120px;
+    border: 1px solid black;
+    border-radius: 100px;
+    background-color: rgb(37, 118, 223);
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 100px;
+    background-color: white;
+}
+.inputbox{
+    width: 300px;
+    margin: auto;
+    height: 250px;
+    margin-top: 30px;
+}
+.user,.dob,.phone,.email,.pass,.cpass{
+    width: 270px;
+    margin-left: 15px;
+    border-radius: 30px;
+    height: 40px;
+    box-shadow: 3px 3px 5px rgb(111, 122, 138);
+    border: 0;
+}
+.user{
+    background:url("https://cdn-icons-png.flaticon.com/512/1077/1077114.png") no-repeat scroll 7px 6px;
+    padding-left: 45px;
+    padding-right: 15px;
+    background-size: 28px;
+}
+.dob{
+    background:url("https://cdn-icons-png.flaticon.com/128/6697/6697479.png") no-repeat scroll 7px 6px;
+    padding-left: 45px;
+    padding-right: 15px;
+    background-size: 30px;
+    color: gray;
+}
+.phone{
+    background:url("https://png.pngtree.com/png-clipart/20210311/original/pngtree-phone-icon-in-circle-black-png-image_5994540.png") no-repeat scroll 3px 2px;
+    padding-left: 45px;
+    padding-right: 15px;
+    background-size: 38px;
+}
+.email{
+    background:url("https://www.shareicon.net/data/128x128/2015/12/02/681171_email_512x512.png") no-repeat scroll 7px 6px;
+    padding-left: 45px;
+    padding-right: 15px;
+    background-size: 30px;
+}
+.pass{
+    background:url("https://www.shareicon.net/data/128x128/2015/11/10/669695_locked_512x512.png") no-repeat scroll 7px 6px;
+    padding-left: 45px;
+    padding-right: 15px;
+    background-size: 30px;
+}
+.cpass{
+    background:url("https://www.shareicon.net/data/128x128/2015/11/10/669695_locked_512x512.png") no-repeat scroll 7px 6px;
+    padding-left: 45px;
+    padding-right: 15px;
+    background-size: 30px;
+}
+.rem{
+    margin-left: 85px;
+    margin-top: 20px;
+    color: rgb(37, 118, 223);
+}
+.buttn{
+    border-radius: 20px;
+    width: 90px;
+    background-color: rgb(37, 118, 223);
+}
+.buttnbox{
+    text-align: center;
+    margin-top: 30px;
+}
+.signin{
+    text-align: center;
+    margin-top: 15px;
+    color: rgb(37, 118, 223);
+}
+.snin{
+    text-decoration: none;
+}
+.snin:hover{
+    color: red;
+}
