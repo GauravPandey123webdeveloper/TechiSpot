@@ -13,7 +13,7 @@ export default function SideBar() {
             
             <Link to='/notes'> <i class="fa-brands fa-html5"></i>Html</Link>
             </li>
-            <li className={styles.courseItem}> <Link to='/notes'> <i class="fa-brands fa-css3"></i>CSS</Link></li>
+            <li className={styles.courseItem}> <Link to='/notes/css'> <i class="fa-brands fa-css3"></i>CSS</Link></li>
             <li className={styles.courseItem}> <Link to='/notes'><i class="fa-brands fa-js"> </i>js</Link></li>
             <li className={styles.courseItem}> <Link to='/notes'> <i class="fa-brands fa-react"></i>react</Link></li>
             <li className={styles.courseItem}> <Link to='/notes'><i class="fa-brands fa-reddit-alien"></i>redux</Link></li>

@@ -12,7 +12,7 @@ export default function NavBar() {
       <nav className={styles.navigation}>
         <div className={styles.logo}>
           <img src={tech} alt="tech" className={styles.icn} />
-          <div className={styles.logoName}>TechiSpot</div>
+          <div className={styles.logoName}>TechieSpot</div>
         </div>
         <div className={styles.menu}>
           <ul className={styles.ul1}>
