@@ -1,7 +1,7 @@
 import React from 'react'
 import {Routes,Route} from 'react-router-dom'
 import NavBar from '../component/NavBar'
-import SideBar from '../component/SideBar'
+import NoteBar from './NoteBar'
 import Team from '../component/Team'
 import styles from './Notes.module.css'
 import Post from '../component/Post'
@@ -13,7 +13,7 @@ export default function Notes() {
     <NavBar/>
     <div className={styles.notes}>
     
-      <SideBar/>
+      <NoteBar/>
       <Notespace/>
        
       
