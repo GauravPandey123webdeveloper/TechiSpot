@@ -52,7 +52,7 @@ export default function NavBar() {
               </Link>
        
            <Link to="/signup">
-                <span className={styles.menuText}>Sign Up</span>
+                <span className={styles.menuText}>SignUp</span>
               </Link>
             </li>
             
