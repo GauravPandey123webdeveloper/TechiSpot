@@ -6,8 +6,8 @@ import MyProfile from './all_community/MyProfile';
 export default function SideBar() {
   return (
     <div className={styles.community}>
-      <div className={styles.box}><h1 className={styles.commhead}>Community</h1> <button  className={`${styles.iconButton}`}><i className={`fa-regular fa-plus`}></i></button> </div>
-      <div className={styles.chats}>
+      <div className={styles.box}><h1 className={styles.commhead}>Community</h1> <button  className={`${styles.iconButton}`}><i className={`fa-regular fa-plus`}></i></button></div>
+       <div className={styles.chats}>
         <Communities/>
       </div>
     </div>
