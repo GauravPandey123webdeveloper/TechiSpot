@@ -40,12 +40,25 @@ export default function NavBar() {
                 <span className={styles.menuText}> Tech Notes</span>
               </Link>
             </li>
+           
+        
+            
+            
             <li class="lid">
+            
               <Link to="/sign">
                 <img src={sign} alt="signin" className={styles.icon}></img>
-                <span className={styles.menuText}>Sign in</span>
+                <span className={styles.menuText}>Sign in | </span>
+              </Link>
+       
+           <Link to="/signup">
+                <span className={styles.menuText}>Sign Up</span>
               </Link>
             </li>
+            
+         
+          
+           
           </ul>
         </div>
       </nav>
