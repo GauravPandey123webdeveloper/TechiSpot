@@ -1,0 +1,16 @@
+.space{
+    margin-left: 30vw;
+    margin-right: 7vw;
+    margin-top: 5vh;
+}
+.heading{
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+.data{
+    font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.span{
+    margin-left: 11vw;
+}
