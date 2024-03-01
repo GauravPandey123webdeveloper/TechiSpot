@@ -1,9 +1,9 @@
 .post {
-  width: 50vw;
+  width: 51vw;
   box-shadow: 0px 0px 10px;
   height: 100vh;
   padding: 1vh;
-  margin-left: 25vw;
+  margin-left: 24vw;
   overflow: auto;
   position: fixed;
   top: 20;
