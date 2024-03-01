@@ -30,3 +30,8 @@ body{
 .list::-webkit-scrollbar{
     display: none;
 }
+@media screen and (max-width:600px){
+    .list{
+        margin-top: 14vh;
+    }
+}
