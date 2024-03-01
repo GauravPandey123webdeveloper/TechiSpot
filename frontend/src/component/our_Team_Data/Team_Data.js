@@ -43,13 +43,6 @@ let data = [
     git: "https://github.com/ASHISHBVB",
   },
   {
-    name: "Rishav Tarway",
-    pro: "./Team_Profile_Pic/Rishav_Tarway.png",
-    about: "Front End Developer",
-    linkedin: "https://www.linkedin.com/in/rishav-tarway-fst/",
-    git: "https://github.com/Overhere7Y",
-  },
-  {
     name: "Prateek Choudhary",
     pro: "./Team_Profile_Pic/Prateek_Choudhary.jpeg",
     about: "Front End Developer",
@@ -84,12 +77,107 @@ let data = [
     linkedin: "https://www.linkedin.com/in/purnima-baroi-0882072aa/",
     git: "https://github.com/purniiiima",
   },
+  
+  {
+    name: "Priyansh Kandwal",
+    pro: "./Team_Profile_Pic/Priyansh.jpeg",
+    about: "Front End Developer",
+    linkedin: "https://www.linkedin.com/in/priyansh-kandwal69",
+    git: "https://github.com/priyansh-69",
+  },
   {
     name: "Ayush Srivastava",
     pro: "./Team_Profile_Pic/Ayush_Srivastava.jpeg",
     about: "Front End Developer",
     linkedin: "https://www.linkedin.com/in/ayushsrivastava0609/",
     git: "https://github.com/AyushSrivastava0609",
+  },
+  {
+
+    
+    name: "Aryan Lamba",
+    pro: "./Team_Profile_Pic/Aryan_Lamba.jpg",
+    about: "Front End Developer",
+    linkedin: "https://www.linkedin.com/in/aryan-lamba-1b2769292/",
+    git: "https://github.com/lambaaryan011",
+  },
+  {
+    name: "Abhishek Kumar",
+    pro: "./Team_Profile_Pic/Abhishek_Kumar.jpeg",
+    about: "Front End Developer",
+    linkedin: "https://www.linkedin.com/in/abhishekkumar74/",
+    git: "https://github.com/abhishekkumar74",
+  },
+  {
+    name: "Avanish Pal",
+    pro: "./Team_Profile_Pic/Avanish_Pal.jpeg",
+    about: "Front End Developer",
+    linkedin: "https://www.linkedin.com/in/avanishpal143/",
+    git: "https://github.com/avanishpal143",
+  },
+  {
+    name: "Jayesh Kakhani",
+    pro: "./Team_Profile_Pic/Jayesh_Kakhani.jpeg",
+    about: "Front End Developer",
+    linkedin: "https://www.linkedin.com/in/jayesh-kakhani-3153682a5/",
+    git: "https://github.com/Jayesh09871",
+  },
+  {
+    name: "Mani Kant",
+    pro: "./Team_Profile_Pic/Mani_Kant.jpeg",
+    about: "Front End Developer",
+    linkedin: "https://www.linkedin.com/in/mani-kant-0326362a6/",
+    git: "https://github.com/Manikant97",
+  },
+  {
+    name: "Govind Rajput",
+    pro: "./Team_Profile_Pic/Govind_Rajput.jpeg",
+    about: "Front End Developer",
+    linkedin:
+      "https://www.linkedin.com/in/govind-rajput-9b249a29a/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    git: "https://github.com/govindrajputFST",
+  },
+  {
+    name: "Lokesh Bijarniya",
+    pro: "./Team_Profile_Pic/Lokesh_Bijarniya.jpeg",
+    about: "Front End Developer",
+    linkedin: "https://www.linkedin.com/in/lokesh-bijarniya/",
+    git: "https://github.com/Lokesh-Bijarniya",
+  },
+  {
+    name: "Manas Raj",
+    pro: "./Team_Profile_Pic/Manas_Raj.jpeg",
+    about: "Front End Developer",
+    linkedin: "https://www.linkedin.com/in/manas-raj-a34125293/",
+    git: "https://github.com/allAboutManas",
+
+  },{
+  name: "Nikhil Raghuwanshi",
+    pro: "./Team_Profile_Pic/Nikhil_Raghuwanshi.jpeg",
+    about: "Front End Developer",
+    linkedin: "https://www.linkedin.com/in/nikhilraghuwanshi/",
+    git: "https://github.com/Nikhilraghuwanshi04",
+  },
+  {
+    name: "Rushikesh Dhumal",
+    pro: "./Team_Profile_Pic/Rushikesh_Dhumal.jpeg",
+    about: "Front End Developer",
+    linkedin: "https://www.linkedin.com/in/rushikesh-dhumal-613309246/",
+    git: "https://github.com/Rishi2911",
+  },
+  {
+    name: "Saurabh Singh",
+    pro: "./Team_Profile_Pic/Saurabh.jpeg",
+    about: "Front End Developer",
+    linkedin: "https://www.linkedin.com/in/saurabh-singh-aa381128b/",
+    git: "https://github.com/Saurabhsing21",
+  },
+  {
+    name: "Himanshu Prajapati",
+    pro: "./Team_Profile_Pic/Himanshu.jpeg",
+    about: "Front End Developer",
+    linkedin: "https://www.linkedin.com/in/himanshu-prajapati-48814724a/",
+    git: "https://github.com/himanshu1573",
   }
 ];
 export default data;

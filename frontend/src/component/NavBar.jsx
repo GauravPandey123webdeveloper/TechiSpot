@@ -29,20 +29,20 @@ export default function NavBar() {
               </Link>
             </li>
             <li className={styles.lic}>
-              <img src={meme} alt="Meme" className={styles.icon}></img>
               <Link to="/meme">
+                <img src={meme} alt="Meme" className={styles.icon}></img>
                 <span className={styles.menuText}>Tech memes</span>
               </Link>
             </li>
             <li class="lid">
-              <img src={note} alt="notes" className={styles.icon}></img>
               <Link to="/notes">
+                <img src={note} alt="notes" className={styles.icon}></img>
                 <span className={styles.menuText}> Tech Notes</span>
               </Link>
             </li>
             <li class="lid">
-              <img src={sign} alt="signin" className={styles.icon}></img>
               <Link to="/sign">
+                <img src={sign} alt="signin" className={styles.icon}></img>
                 <span className={styles.menuText}>Sign in</span>
               </Link>
             </li>
