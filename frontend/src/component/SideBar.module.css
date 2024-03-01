@@ -1,34 +1,52 @@
-.sidenav{
-    width: 25vw;
+.sidenav {
+    width: 24vw;
     box-shadow: 0px 0px 10px;
     height: 90vh;
     border-radius: 10px 0px 0px 0px;
     position: fixed;
-    top:10;
-    padding: 9vh;
+    top: 10;
+    padding: 5vh 2vw;
     overflow: auto;
-    
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
-.sidemenu{
+
+.sidemenu {
     list-style: none;
-    padding: 2vh 2vw 10vh;
+    padding: 0;
     font-size: 1.5rem;
 }
-.courseItem a{
+
+.courseItem {
+    margin-left: 10px; 
+}
+
+.courseItem a {
     color: white;
     margin-top: 1.3vh;
     outline: none;
     text-decoration: none;
     text-transform: capitalize;
+    display: block;
+    padding: 1.3vh 0;
 }
-.courseItem:hover{
+
+.sidemenu li {
+    margin-bottom: 1.3vh;
+}
+
+.courseItem:hover {
     box-shadow: 0px 0px 5px;
     border-radius: 10px;
     background-color: rgb(6, 133, 244);
+}
+
+.courseItem:hover a {
     color: black;
 }
-@media screen and (max-width:600px) {
-    .sidenav{
+
+@media screen and (max-width: 600px) {
+    .sidenav {
         display: none;
     }
 }
