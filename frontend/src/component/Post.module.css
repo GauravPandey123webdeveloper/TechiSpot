@@ -1,6 +1,6 @@
 .post {
   width: 50vw;
-  box-shadow: 0px 0px 1px;
+  box-shadow: 0px 0px 10px;
   height: 100vh;
   padding: 1vh;
   margin-left: 25vw;
@@ -9,12 +9,36 @@
   top: 20;
   padding-bottom: 20vh;
 }
+.reactions > * {
+  margin-right: 10px;
+}
+
+.likeContainer {
+  display: flex;
+  align-items: center;
+}
+
+.likeCount {
+  margin-left: 5px;
+}
+
+
 .reactions {
   box-shadow: 0px 0px 5px;
-  font-size: 1.6rem;
+  font-size: 2rem;
   display: flex;
   justify-content: space-around;
   padding: 1vh;
+  display: flex;
+  align-items: center;
+  margin-left: auto; 
+}
+.App{
+  box-shadow: 0px 0px 5px;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-around;
+  padding: 1vh; 
 }
 .pstimg {
   box-shadow: 0px 0px 2px;
@@ -50,22 +74,21 @@
 .bio {
   color: #657786;
   margin-bottom: 16px;
-  text-align: justify;
 }
 
 .followButton {
-  background-color: #221f1f;
+  background-color: #1f2122;
   color: #fff;
   border: none;
   padding: 3px 20px;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s;
-  margin-left: 30vw;
+  margin-left: 25vw;
 }
 
 .followButton:hover {
-  background-color: #1da1f2;
+  background-color: #8c98a4;
 }
 
 .userDP {
@@ -78,13 +101,10 @@
   width: 40vw;
   padding: 12px 16px;
   font-size: 16px;
-  color: white;
-  border: none; 
-  border-bottom: 1px solid #ccc;  
-  border-radius: 0; 
+  border: 1px solid #ccc;
+  border-radius: 100px;
   outline: none;
   margin-left: 1vw;
-  background-color: transparent;  
 }
 
 .Postbtn {
@@ -101,6 +121,15 @@
 .Postbtn:hover {
   background-color: #0d8ecf; 
 }
+
+.whenclick {
+  color: #eb1717;
+}
+
+.whenclick1 {
+  background-color: #eb1717;
+}
+
 
 .emojis {
   font-size: 1.5rem;
