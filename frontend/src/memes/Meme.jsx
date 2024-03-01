@@ -21,6 +21,7 @@ export default function Meme() {
           <li className={styles.memeItem}><i className="fa-solid fa-heart-circle-plus"></i>Favourites</li>
         </ul>
       </div>
+      <button class="addButton">Add</button>
     </>
   )
 }
