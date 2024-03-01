@@ -4,7 +4,7 @@ import styles from './NewsSideBar.module.css';
 export default function NewsSideBar() {
   return (
     <div className={styles.sideNav}>
-        <h1 className={styles.navHeading}><i class="fa-solid fa-fire-flame-curved"></i>Breaking News</h1>
+        <h1 className={styles.navHeading}><i class="fa-solid fa-fire-flame-curved"></i>Breaking News</h1><hr/>
        <ul className={styles.sideMenu}>
           <li className={styles.techItems}><i class="fa-solid fa-globe"></i> Artificial Intelligence(AI)</li>
           <li className={styles.techItems}><i class="fa-solid fa-globe"></i> Cybersecurity</li>
