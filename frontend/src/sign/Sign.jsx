@@ -22,7 +22,7 @@ export default function Sign() {
                             <button onClick={handleLogin} className={styles.buttn}>Login</button>
                         </div>
                         <div className={styles.signup}>
-                        <Link to='/Signup' className={styles.snup}> Don't have an account? Sign Up</Link>
+                            Don't have an account? <Link to='/Signup' className={styles.snup}>Sign Up</Link>
                         </div>
                     </form>
                 </div>

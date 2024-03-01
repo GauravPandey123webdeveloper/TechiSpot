@@ -1,9 +1,9 @@
 .box{
     border: 2px solid white;
-    width: 350px;
+    width: 40vh;
     margin: auto;
-    margin-top: 120px;
-    height: 450px;
+    margin-top: 15vh;
+    height: 52vh;
     background-color: white;
     border-radius: 50px;
     box-shadow: 10px 10px 10px rgb(131, 129, 129);
@@ -55,8 +55,8 @@
     background-size: 27px;
 }
 .rem{
-    margin-left: 87px;
-    margin-top: 25px;
+    text-align: center;
+    margin-top: 20px;
     color: rgb(37, 118, 223);
 }
 .check{
@@ -81,5 +81,48 @@
 }
 .snup:hover{
     color: red;
-    text-decoration: underline;
+}
+@media (max-width:500px){
+    .box{
+        width: 80vw;
+        height: 67vh;
+    }
+    .inputbox{
+        width: 78vw;
+    }
+    .user,.pass{
+        width: 74vw;
+        margin-left: 1vh;
+        border-radius: 30px;
+        height: 40px;
+        border: 0;
+    }    
+}
+@media (min-width:1000px){
+    .box{
+        width: 30vw;
+        height: 60vh;
+    }
+    .inputbox{
+        width: 28vw;
+    }
+    .user,.pass{
+        width: 26vw;
+        margin-left: 1vh;
+        border-radius: 30px;
+        height: 5vh;
+        border: 0;
+    }
+    .user{
+        background:url("https://cdn-icons-png.flaticon.com/512/1077/1077114.png") no-repeat scroll 1vh 1.1vh;
+        padding-left: 5vh;
+        padding-right: 15px;
+        background-size: 3vh;
+    }
+    .pass{
+        background:url("https://www.shareicon.net/data/128x128/2015/11/10/669695_locked_512x512.png") no-repeat scroll 1vh 1.1vh;
+        padding-left: 5vh;
+        padding-right: 15px;
+        background-size: 3vh;
+    }
 }
