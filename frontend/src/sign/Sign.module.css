@@ -81,4 +81,5 @@
 }
 .snup:hover{
     color: red;
+    text-decoration: underline;
 }
