@@ -7,6 +7,7 @@ import Sign from './sign/Sign'
 import Signup from "./signup/Signup";
 import CssNote from "./CssNotes/CssNote";
 import Error from "./error/Error";
+import SignupNext from "./signup/SignupNext";
 function App() {
   return (
     <>
@@ -19,6 +20,7 @@ function App() {
         <Route path="/notes/css" element={<CssNote/>}/>
         <Route path="/sign" element={<Sign/>}/>
         <Route path="/signup" element={<Signup/>}/>
+        <Route path="/signNext" element={<SignupNext/>}/>
       </Routes>
       
     </>

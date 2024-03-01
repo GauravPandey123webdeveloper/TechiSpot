@@ -16,14 +16,11 @@ export default function Signup() {
                         <input className={styles.user} type="text" placeholder='Username'/> <br /><br />
                         <input className={styles.dob} type="date" placeholder='Date Of Birth'/> <br /><br />
                         <input className={styles.phone} type="text" placeholder='Phone Number'/> <br /><br />
-                        <input className={styles.email} type="email" placeholder='Email ID'/> <br /><br />
-                        <input className={styles.pass} type="password" placeholder='Password'/> <br /><br />
-                        <input className={styles.cpass} type="password" placeholder='Confirm Password'/> <br />
                         <div className={styles.buttnbox}>
-                            <button onClick={handleLogin} className={styles.buttn}>Sign Up</button>
+                            <button onClick={handleLogin} className={styles.buttn}><Link to='/signNext' className={styles.snin}> Next</Link></button>
                         </div>
                         <div className={styles.signin}>
-                        <Link to='/Sign' className={styles.snin}> Have an account? Sign In</Link>
+                            Have an account? <Link to='/sign' className={styles.snin}>Sign In</Link>
                         </div>
                     </form>
                 </div>

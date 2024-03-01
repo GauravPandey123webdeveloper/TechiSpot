@@ -39,26 +39,25 @@
     box-shadow: 3px 3px 5px rgb(111, 122, 138);
     border: 0;
 }
-.user{
-    background:url("https://cdn-icons-png.flaticon.com/512/1077/1077114.png") no-repeat scroll 7px 6px;
-    padding-left: 45px;
-    padding-right: 15px;
-    background-size: 28px;
-}
-.dob{
-    background:url("https://cdn-icons-png.flaticon.com/128/6697/6697479.png") no-repeat scroll 7px 6px;
+
+.email{
+    background:url("https://www.shareicon.net/data/128x128/2015/12/02/681171_email_512x512.png") no-repeat scroll 7px 6px;
     padding-left: 45px;
     padding-right: 15px;
     background-size: 30px;
-    color: gray;
 }
-.phone{
-    background:url("https://png.pngtree.com/png-clipart/20210311/original/pngtree-phone-icon-in-circle-black-png-image_5994540.png") no-repeat scroll 3px 2px;
+.pass{
+    background:url("https://www.shareicon.net/data/128x128/2015/11/10/669695_locked_512x512.png") no-repeat scroll 7px 6px;
     padding-left: 45px;
     padding-right: 15px;
-    background-size: 38px;
+    background-size: 30px;
 }
-
+.cpass{
+    background:url("https://www.shareicon.net/data/128x128/2015/11/10/669695_locked_512x512.png") no-repeat scroll 7px 6px;
+    padding-left: 45px;
+    padding-right: 15px;
+    background-size: 30px;
+}
 .rem{
     margin-left: 85px;
     margin-top: 20px;
@@ -71,7 +70,7 @@
 }
 .buttnbox{
     text-align: center;
-    margin-top: 15px;
+    margin-top: 50px;
 }
 .signin{
     text-align: center;
@@ -80,7 +79,6 @@
 }
 .snin{
     text-decoration: none;
-    color: black;
 }
 .snin:hover{
     color: red;
@@ -95,7 +93,7 @@
     .inputbox{
         width: 78vw;
     }
-    .user,.dob,.phone{
+    .email,.pass,.cpass{
         width: 74vw;
         margin-left: 1vh;
         border-radius: 30px;
@@ -105,38 +103,38 @@
 
     
 }
+
 @media (min-width:1000px){
     .box{
         width: 30vw;
         height: 60vh;
     }
     .inputbox{
-        width: 28vw;
+        width:28vw;
     }
-    .user,.dob,.phone{
+    .email,.pass,.cpass{
         width: 26vw;
         margin-left: 1vh;
         border-radius: 30px;
         height: 5vh;
         border: 0;
     }
-    .user{
-        background:url("https://cdn-icons-png.flaticon.com/512/1077/1077114.png") no-repeat scroll  1vh 1.1vh;
+    .email{
+        background:url("https://www.shareicon.net/data/128x128/2015/12/02/681171_email_512x512.png") no-repeat scroll 1vh 1.1vh;
         padding-left: 5vh;
         padding-right: 15px;
         background-size: 3vh;
     }
-    .dob{
-        background:url("https://cdn-icons-png.flaticon.com/128/6697/6697479.png") no-repeat scroll 1vh 1.1vh;
+    .pass{
+        background:url("https://www.shareicon.net/data/128x128/2015/11/10/669695_locked_512x512.png") no-repeat scroll 1vh 1.1vh;
         padding-left: 5vh;
         padding-right: 15px;
         background-size: 3vh;
-        color: gray;
     }
-    .phone{
-        background:url("https://png.pngtree.com/png-clipart/20210311/original/pngtree-phone-icon-in-circle-black-png-image_5994540.png") no-repeat scroll 1vh 0.9vh;
+    .cpass{
+        background:url("https://www.shareicon.net/data/128x128/2015/11/10/669695_locked_512x512.png") no-repeat scroll 1vh 1.1vh;
         padding-left: 5vh;
         padding-right: 15px;
-        background-size: 3.5vh;
+        background-size: 3vh;
     }
 }
