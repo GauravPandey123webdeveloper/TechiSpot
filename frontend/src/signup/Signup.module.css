@@ -100,4 +100,5 @@
 }
 .snin:hover{
     color: red;
+    text-decoration: underline;
 }

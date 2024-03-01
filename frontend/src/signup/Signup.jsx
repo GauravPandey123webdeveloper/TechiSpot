@@ -23,7 +23,7 @@ export default function Signup() {
                             <button onClick={handleLogin} className={styles.buttn}>Sign Up</button>
                         </div>
                         <div className={styles.signin}>
-                            Have an account? <Link to='/Sign' className={styles.snin}> Sign In</Link>
+                        <Link to='/Sign' className={styles.snin}> Have an account? Sign In</Link>
                         </div>
                     </form>
                 </div>
