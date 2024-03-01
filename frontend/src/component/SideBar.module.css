@@ -38,7 +38,7 @@
 .courseItem:hover {
     box-shadow: 0px 0px 5px;
     border-radius: 10px;
-    background-color: rgb(6, 133, 244);
+    background-color: rgb(234, 236, 238);
 }
 
 .courseItem:hover a {
