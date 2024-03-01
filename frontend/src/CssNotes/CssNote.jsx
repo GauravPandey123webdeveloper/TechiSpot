@@ -1,7 +1,7 @@
 import React from 'react'
 import Cssnav from '../cssnavbar/Cssnav'
 import NavBar from '../component/NavBar'
-import SideBar from '../component/SideBar'
+import NoteBar from '../notes/NoteBar'
 import styles from './CssNote.module.css'
 import Csshome from './Csshome'
 export default function CssNote() {
@@ -10,8 +10,8 @@ export default function CssNote() {
     <NavBar/>
     <div className={styles.cssnote}>
       <Cssnav/>
-      <SideBar/>
-      <Csshome/>
+      <NoteBar/>
+      {/* <Csshome/> */}
     </div>
     </>
   )
