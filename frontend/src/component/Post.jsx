@@ -50,7 +50,7 @@ export default function Post() {
         <div className={styles.profileContainer}>
           <div className={styles.usrprofile}>
             <img src="https://i.pinimg.com/474x/bd/26/b7/bd26b704fca0c5e3fe68f10322bf65c0.jpg" alt="Profile" className={styles.profilePic} />
-            TechiSpot <button className={`${styles.followButton} ${isFollowing ? styles.whenclick1 : ''}`} onClick={handleFollowToggle}> {isFollowing ? 'Following' : 'Follow +'}
+            TechiSpot <button className={`${styles.followButton} ${isFollowing ? styles.whenclick1 : ''}`} onClick={handleFollowToggle}> {isFollowing ? 'Following' : '+ Follow'}
             </button>
             <p className={styles.bio}>Hello, This is a post. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim quam omnis sunt explicabo temporibus provident. Recusandae, dolorem nisi. Sunt necessitatibus qui dolore, consequatur doloribus nam? Perferendis commodi sunt minima aliquam?</p>
 
