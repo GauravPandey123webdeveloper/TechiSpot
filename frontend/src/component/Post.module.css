@@ -53,7 +53,7 @@
 }
 
 .followButton {
-  background-color: #1f2122;
+  background-color: #221f1f;
   color: #fff;
   border: none;
   padding: 3px 20px;
@@ -64,7 +64,7 @@
 }
 
 .followButton:hover {
-  background-color: #8c98a4;
+  background-color: #ba0c15;
 }
 
 .userDP {
@@ -114,4 +114,24 @@
     width: 71vw;
   }
   
+}
+.iconButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 26px;
+  color: #f2eeee;
+}
+.whenclick {
+  color: #eb1717;
+
+}
+.whenclick1 {
+  background-color: #eb1717;
+
+}
+.count{
+  margin-right: 15px;
+
 }
