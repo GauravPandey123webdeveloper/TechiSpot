@@ -168,3 +168,6 @@
   margin-right: 15px;
 
 }
+.post::-webkit-scrollbar{
+  display: none;
+}

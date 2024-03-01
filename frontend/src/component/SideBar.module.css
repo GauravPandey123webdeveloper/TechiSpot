@@ -58,3 +58,6 @@ h1 {
         display: none;
     }
 }
+.community::-webkit-scrollbar{
+    display: none;
+  }

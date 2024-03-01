@@ -9,9 +9,10 @@ export default function CssNote() {
     <>
     <NavBar/>
     <div className={styles.cssnote}>
+    <NoteBar/>
       <Cssnav/>
-      <NoteBar/>
-      {/* <Csshome/> */}
+      
+      <Csshome/>
     </div>
     </>
   )
