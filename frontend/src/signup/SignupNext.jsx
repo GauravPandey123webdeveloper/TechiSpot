@@ -41,6 +41,9 @@ export default function SignupNext() {
                 Sign Up
               </button>
             </div>
+            <div className={styles.signin}>
+                            Have an account? <Link to='/sign' className={styles.snin}>Sign In</Link>
+                        </div>
           </form>
         </div>
       </div>
