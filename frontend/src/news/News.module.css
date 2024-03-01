@@ -11,6 +11,7 @@
     padding-top: 10px;
     scroll-behavior: auto;
     overflow-y: scroll;
+    cursor: pointer;
   }
   
   .heading {
@@ -53,8 +54,7 @@
   }
   
   .breaking  a{
-    cursor: pointer; /* Add cursor pointer for better UX */
-     text-decoration: none;
+    text-decoration: none;
   }
   
   .breaking:hover {
