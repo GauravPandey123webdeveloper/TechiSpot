@@ -1,12 +1,14 @@
 .sideNav{
-    margin-top: 10.4vh;
+
+    margin-top: 9.7vh;
     border: 1px solid rgb(56, 55, 55);
     /* box-shadow: -3px 1px 10px; */
     height: 90vh;
     border-radius: 0px 0px 0px 0px;
     position: fixed;
     width: 25%;
-    overflow:scroll;
+
+   overflow:scroll;
 }
 
 .navHeading{
@@ -22,9 +24,8 @@
     font-family: emoji;
     border-radius: 1px;
    width: 25%;
-   margin-left: 0.7vw;
-   font-size: 3.2vw;
-   padding-top: 2vh;
+   margin-left: 3px;
+   font-size: 48.3px;
 }
 
 .navHeading i{

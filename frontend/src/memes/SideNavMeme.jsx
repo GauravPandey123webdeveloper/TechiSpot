@@ -19,7 +19,6 @@ export default function SideNavMeme() {
   <li className={styles.memeItem}><i className="fa-solid fa-heart-circle-plus"></i>Favourites</li>
 </ul>
 </div>
-<button class="addButton">Add</button>
     </div>
   )
 }
