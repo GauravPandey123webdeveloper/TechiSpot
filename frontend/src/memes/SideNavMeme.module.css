@@ -21,6 +21,7 @@
 .memeItem {
     margin-top: 1.3vh;
     padding: 1.5vh;
+    cursor: pointer;
     transition: box-shadow 0.3s ease, border-radius 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -38,24 +39,6 @@ i {
     color: #2196f3; /* Material blue color for icons */
 }
 
-/* Additional styles for 'Add' button */
-.addButton {
-    display: block;
-    margin: 2vh auto;
-    padding: 1vh 2vw;
-    background-color: #4caf50; /* Green color for the 'Add' button */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.2rem;
-    transition: background-color 0.3s ease;
-}
-
-/* Hover effect for 'Add' button */
-.addButton:hover {
-    background-color: #45a049; /* Darker green color on hover */
-}
 @media screen and (max-width:600px){
     .sidenavmemes{
         display:none;
