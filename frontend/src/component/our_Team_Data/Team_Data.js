@@ -178,6 +178,13 @@ let data = [
     about: "Front End Developer",
     linkedin: "https://www.linkedin.com/in/himanshu-prajapati-48814724a/",
     git: "https://github.com/himanshu1573",
+  },
+  {
+    name: "Avanish Yadav",
+    pro: "./Team_Profile_Pic/Avanish_Yadav.jpeg",
+    about: "Front End Developer",
+    linkedin: "https://www.linkedin.com/in/avanish-yadav-089156292/",
+    git: "https://github.com/Avanishyadav8175/",
   }
 ];
 export default data;
