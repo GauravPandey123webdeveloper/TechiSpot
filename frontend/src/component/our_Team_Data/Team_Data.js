@@ -22,6 +22,13 @@ let data = [
     git: "https://github.com/Arihant-Singh-Rana",
   },
   {
+    name: "Abhishek Farshwal",
+    pro: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Windows_10_Default_Profile_Picture.svg/2048px-Windows_10_Default_Profile_Picture.svg.png",
+    about: "Competitive Programmer",
+    linkedin: "https://www.linkedin.com/in/abhishekfarswal/",
+    git: "https://github.com/champ-farswal",
+  },
+  {
     name: "Sharad Singh Kushwaha",
     pro: "./Team_Profile_Pic/Sharad_Singh_Kushwaha.jpeg",
     about: "Front End Developer",
