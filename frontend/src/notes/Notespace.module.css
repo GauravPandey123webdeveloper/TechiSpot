@@ -1,7 +1,9 @@
 .space{
-    margin-left: 30vw;
-    margin-right: 7vw;
-    margin-top: 5vh;
+    padding: 10px 60px 0px 60px; 
+    border: 2px solid yellow; 
+    width: 75vw;
+    margin-left: 23vw;
+    margin-right: 2vw;
 }
 .heading{
     font-size: 50px;
@@ -10,7 +12,5 @@
 .data{
     font-size: 22px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.span{
-    margin-left: 8vw;
+    text-align: center;
 }
