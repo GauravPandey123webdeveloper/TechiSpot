@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Community.module.css";
-import dataCommunity from "./Community_Data"; 
+import dataCommunity from "./Community_Data";
 
 
 export default function Communities() {
@@ -15,5 +15,4 @@ export default function Communities() {
       ));
     
       return <div className={styles.card}>{infoCommunity}</div>;
-  
 }

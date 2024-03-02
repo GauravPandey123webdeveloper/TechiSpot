@@ -1,74 +1,107 @@
-.community{
-    width: 24vw;
+.community {
+    width: 21vw;
     box-shadow: 0px 0px 2px;
     height: 90vh;
-    border-radius: 2px 0px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
     position: fixed;
-    top: 10;
-    padding: 5vh 2vw;
+    /* padding-top: 4vh; */
     overflow: auto;
-    margin-left: 0vw;
-    margin-right: 1vw;
+    margin-left: 5px;
+    box-shadow: 0px 0px 3px;
 }
 
 .box {
     text-align: left;
-    width: 24vw;
+    width: 21vw;
     position: fixed;
     background-color: #000000;
-    z-index: 10;
-    top: 20;
-    overflow: auto;
-    box-shadow: 0px 0px 1px inset;
-    padding-left: 5px;
-    padding-top: 1.6vh;
+    z-index: 20;
+    box-shadow: 0px 0px 2px;
+    padding: 1vw;
     border-radius: 2px;
-    padding-bottom: 1.2vh;
-    margin-left: -2.1vw;
-    margin-top: -5vh;
-    height: 9.5vh;
-
+    /* margin-top: 1vh; */
+    height: 8vh;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    justify-content: space-between;
 }
- 
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(97, 95, 95);
+}
+
 h1 {
     display: inline;
-    font-size: 33px; 
+    font-size: 2.5vw;
 }
-.iconButton{
-  margin-left: 100px;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  font-size: 26px;
-  color: #f2eeee;
+
+.iconButton {
+    /* margin-left: 4.2vw; */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 2vw;
+    color: #f2eeee;
 }
-.iconButton:hover{
-   font-size: 28px;
+
+.iconButton:hover {
+    font-size: 2.1vw;
 }
+
 .chats {
-    margin-top: 6vh;
+    margin-top: 10.5vh;
     margin-left: -2.6vh;
-    width: 23vw;
-    top: 50; 
-    position: relative; 
+    width: 19vw;
+    top: 50;
+    position: relative;
+}
+.teamhead{
+    font-family: emoji;
+    background: linear-gradient(to right,#f66492 ,rgb(228, 227, 227),#5bf7f1  );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 @media screen and (max-width:600px) {
     .community {
         display: none;
     }
+
+    .box {
+        display: none;
+    }
 }
-.community::-webkit-scrollbar{
-    display: none;
-  }
-  .commhead{
-    font-size: 3vw;
-    margin-left: 1vw;
-    margin-right: -2vw;
-    margin-bottom: 1vw;
-    font-family: emoji;
-    background: linear-gradient(to right,#f66492 ,rgb(228, 227, 227),#5bf7f1   );
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
-  
+
+@media screen and (max-width:1050px) {
+    h1 {
+        font-size: 2vw;
+        margin: 2vw;
+    }
+    .h1 {
+        width: 15vw;
+        padding-top: 1.2vh;
+    }
+
+    .box {
+        width: 15vw;
+        padding-left: 0.5vw;
+        /* padding-top: 2vh; */
+    }
+
+    .community {
+        width: 15vw;
+        /* padding-left: 1vw; */
+    }
+
+    .iconButton {
+        display: none;
+    }
+    .chats{
+        width: 15px;
+        padding-left: 1vw;
+    }
+}

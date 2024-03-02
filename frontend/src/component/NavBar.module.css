@@ -4,20 +4,22 @@
   margin: 0px;
   display: flex;
   align-items: center;
-  padding: 12px;
+  padding: 2vh;
   box-sizing: border-box;
   position: fixed;
-  top:0;
-  z-index: 500;
+  top: 0;
+  /* z-index: 100; */
   width: 100vw;
 }
-.logo{
+
+.logo {
   flex: 20%;
   display: flex;
   padding: 2px;
-  justify-content:center;
+  justify-content: center;
 }
-.menu{
+
+.menu {
   flex: 80%;
 
 }
@@ -71,20 +73,25 @@
 .logoName:hover {
   cursor: pointer;
 }
-@media screen and (max-width:600px){
-  .navigation{
+
+@media screen and (max-width:600px) {
+  .navigation {
     display: block;
   }
-   .logo{
+
+  .logo {
     font-size: 2vh;
-    font-family:Arial, Helvetica, sans-serif;
-   }
-  .ul1{
-     justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .ul1 {
+    justify-content: space-between;
+    /* margin-left: 1vw; */
   }
 }
-@media screen and (max-width:1024px){
-  .menuText{
+
+@media screen and (max-width:1050px) {
+  .menuText {
     display: none;
-   }
+  }
 }

@@ -12,14 +12,14 @@ export default function NavBar() {
       <nav className={styles.navigation}>
         <div className={styles.logo}>
           <img src={tech} alt="tech" className={styles.icn} />
-          <div className={styles.logoName}>TechieSpot</div>
+          <div className={styles.logoName}>TechiSpot</div>
         </div>
         <div className={styles.menu}>
           <ul className={styles.ul1}>
             <li className={styles.lia}>
               <Link to="/">
                 <img src={home} alt="home" className={styles.icon}></img>
-                <span className={styles.menuText}> Home</span>
+                <span className={styles.menuText}>Home</span>
               </Link>
             </li>
             <li className={styles.lib}>
@@ -30,19 +30,19 @@ export default function NavBar() {
             </li>
             <li className={styles.lic}>
               <Link to="/meme">
-                <img src={meme} alt="Meme" className={styles.icon}></img>
+              <img src={meme} alt="Meme" className={styles.icon}></img>
                 <span className={styles.menuText}>Tech memes</span>
               </Link>
             </li>
             <li class="lid">
               <Link to="/notes">
-                <img src={note} alt="notes" className={styles.icon}></img>
-                <span className={styles.menuText}> Tech Notes</span>
+              <img src={note} alt="notes" className={styles.icon}></img>
+                <span className={styles.menuText}>Tech Notes</span>
               </Link>
             </li>
             <li class="lid">
               <Link to="/sign">
-                <img src={sign} alt="signin" className={styles.icon}></img>
+              <img src={sign} alt="signin" className={styles.icon}></img>
                 <span className={styles.menuText}>Sign in</span>
               </Link>
             </li>

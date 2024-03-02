@@ -3,7 +3,7 @@ import styles from './MyProfile.module.css'
 
 export default function MyProfile() {
   return (
-    <div>
+    <div className={styles.mypro}>
       <h1>My Profile</h1>
     </div>
   )

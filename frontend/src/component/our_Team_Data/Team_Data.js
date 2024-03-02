@@ -15,6 +15,13 @@ let data = [
     git: "https://github.com/Keshav-1803",
   },
   {
+  name: "Bhudeo Krit",
+  pro: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Windows_10_Default_Profile_Picture.svg/2048px-Windows_10_Default_Profile_Picture.svg.png",
+  about: "Front End Developer",
+  linkedin: "https://www.linkedin.com/in/bhudeo-krit-5aa154292/",
+  git: "https://github.com/SnowFlowerr",
+  },
+  {
     name: "Arihant Singh Rana",
     pro: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Windows_10_Default_Profile_Picture.svg/2048px-Windows_10_Default_Profile_Picture.svg.png",
     about: "Front End Developer",

@@ -1,77 +1,91 @@
 .box{
     border: 2px solid white;
-    width: 40vh;
+    width: 28vw;
     margin: auto;
     margin-top: 15vh;
-    height: 52vh;
+    height: 62vh;
     background-color: white;
     border-radius: 50px;
     box-shadow: 10px 10px 10px rgb(131, 129, 129);
 }
 .logobox{
-    width: 120px;
+    width: 9vw;
+    height: 9vw;
     margin: auto;
     margin-top: 25px;
-    height: 120px;
     border: 1px solid black;
     border-radius: 100px;
     background-color: rgb(37, 118, 223);
 }
 .logo{
-    width: 100px;
-    height: 100px;
-    margin-left: 10px;
-    margin-top: 10px;
+    width: 7vw;
+    height: 7vw;
+    margin-left: 1vw;
+    margin-top: 1vw;
     border-radius: 100px;
     background-color: white;
 }
 .inputbox{
-    width: 300px;
+    /* border: 3px solid black; */
+    width: 24vw;
     margin: auto;
-    height: 250px;
-    margin-top: 30px;
+    height: 33vh;
+    margin-top: 3.5vh;
 }
 .user,.dob,.phone,.email,.pass,.cpass{
-    width: 270px;
-    margin-left: 15px;
+    width: 21.5vw;
+    margin-left: 1vw;
     border-radius: 30px;
-    height: 40px;
+    height: 4.6vh;
     box-shadow: 3px 3px 5px rgb(111, 122, 138);
     border: 0;
 }
 .user{
-    background:url("https://cdn-icons-png.flaticon.com/512/1077/1077114.png") no-repeat scroll 7px 6px;
-    padding-left: 45px;
-    padding-right: 15px;
-    background-size: 28px;
+    background:url("https://cdn-icons-png.flaticon.com/512/1077/1077114.png") no-repeat scroll 0.6vw 0.5vh;
+    padding-left: 3vw;
+    padding-right: 2vw;
+    background-size: 2vw;
 }
 .dob{
-    background:url("https://cdn-icons-png.flaticon.com/128/6697/6697479.png") no-repeat scroll 7px 6px;
-    padding-left: 45px;
-    padding-right: 15px;
-    background-size: 30px;
+    background:url("https://cdn-icons-png.flaticon.com/128/6697/6697479.png") no-repeat scroll 0.6vw 0.5vh;
+    padding-left: 3vw;
+    padding-right: 2vw;
+    background-size: 2vw;
     color: gray;
 }
 .phone{
-    background:url("https://png.pngtree.com/png-clipart/20210311/original/pngtree-phone-icon-in-circle-black-png-image_5994540.png") no-repeat scroll 3px 2px;
+    background:url("https://png.pngtree.com/png-clipart/20210311/original/pngtree-phone-icon-in-circle-black-png-image_5994540.png") no-repeat scroll 0.3vw 0.2vh;
+    padding-left: 3vw;
+    padding-right: 2vw;
+    background-size: 2.5vw;
+}
+.email{
+    background:url("https://www.shareicon.net/data/128x128/2015/12/02/681171_email_512x512.png") no-repeat scroll 7px 6px;
     padding-left: 45px;
     padding-right: 15px;
-    background-size: 38px;
+    background-size: 30px;
 }
-
-.rem{
-    margin-left: 85px;
-    margin-top: 20px;
-    color: rgb(37, 118, 223);
+.pass{
+    background:url("https://www.shareicon.net/data/128x128/2015/11/10/669695_locked_512x512.png") no-repeat scroll 7px 6px;
+    padding-left: 45px;
+    padding-right: 15px;
+    background-size: 30px;
+}
+.cpass{
+    background:url("https://www.shareicon.net/data/128x128/2015/11/10/669695_locked_512x512.png") no-repeat scroll 7px 6px;
+    padding-left: 45px;
+    padding-right: 15px;
+    background-size: 30px;
 }
 .buttn{
     border-radius: 20px;
-    width: 90px;
+    width: 6vw;
     background-color: rgb(37, 118, 223);
+    height: 4vh;
 }
 .buttnbox{
     text-align: center;
-    margin-top: 15px;
+    margin-top: 2.5vh;
 }
 .signin{
     text-align: center;
@@ -80,63 +94,70 @@
 }
 .snin{
     text-decoration: none;
-    color: black;
 }
 .snin:hover{
     color: red;
 }
-
-@media (max-width:500px){
-    
+@media screen and (max-width:1050px) {
     .box{
-        width: 80vw;
-        height: 67vh;
+        width: 35vw;
+    }
+    .logobox{
+        width: 11vw;
+        height: 11vw;
+    }
+    .logo{
+        width: 9vw;
+        height: 9vw;
     }
     .inputbox{
-        width: 78vw;
-    }
-    .user,.dob,.phone{
-        width: 74vw;
-        margin-left: 1vh;
-        border-radius: 30px;
-        height: 40px;
-        border: 0;
-    }
-
-    
-}
-@media (min-width:1000px){
-    .box{
-        width: 30vw;
-        height: 60vh;
-    }
-    .inputbox{
-        width: 28vw;
-    }
-    .user,.dob,.phone{
-        width: 26vw;
-        margin-left: 1vh;
-        border-radius: 30px;
-        height: 5vh;
-        border: 0;
+        /* border: 3px solid black; */
+        width: 32vw;
+        height: 33vh;
     }
     .user{
-        background:url("https://cdn-icons-png.flaticon.com/512/1077/1077114.png") no-repeat scroll  1vh 1.1vh;
-        padding-left: 5vh;
-        padding-right: 15px;
-        background-size: 3vh;
+        width: 30vw;
+        margin-left: 1vw;
+        background:url("https://cdn-icons-png.flaticon.com/512/1077/1077114.png") no-repeat scroll 1vw 1vh;
+        padding-left: 4vw;
+        background-size: 2.4vw;
     }
     .dob{
-        background:url("https://cdn-icons-png.flaticon.com/128/6697/6697479.png") no-repeat scroll 1vh 1.1vh;
-        padding-left: 5vh;
-        padding-right: 15px;
-        background-size: 3vh;
-        color: gray;
+        width: 30vw;
+        margin-left: 1vw;
+        background:url("https://cdn-icons-png.flaticon.com/128/6697/6697479.png") no-repeat scroll 1vw 1vh;
+        padding-left: 4vw;
+        background-size: 2.4vw;
     }
     .phone{
-        background:url("https://png.pngtree.com/png-clipart/20210311/original/pngtree-phone-icon-in-circle-black-png-image_5994540.png") no-repeat scroll 1vh 0.9vh;
-        padding-left: 5vh;
-        padding-right: 15px;
-        background-size: 3.5vh;
+        width: 30vw;
+        margin-left: 1vw;
+        background:url("https://png.pngtree.com/png-clipart/20210311/original/pngtree-phone-icon-in-circle-black-png-image_5994540.png") no-repeat scroll 0.5vw 0.5vh;
+        padding-left: 4vw;
+        background-size: 3vw;
+    }
+    .email{
+        width: 30vw;
+        margin-left: 1vw;
+        background:url("https://www.shareicon.net/data/128x128/2015/12/02/681171_email_512x512.png") no-repeat scroll 1vw 1vh;
+        padding-left: 4vw;
+        background-size: 3vw;
+    }
+    .pass{
+        width: 30vw;
+        margin-left: 1vw;
+        background:url("https://www.shareicon.net/data/128x128/2015/11/10/669695_locked_512x512.png") no-repeat scroll 1vw 1vh;
+        padding-left: 4vw;
+        background-size: 3vw;
+    }
+    .cpass{
+        width: 30vw;
+        margin-left: 1vw;
+        background:url("https://www.shareicon.net/data/128x128/2015/11/10/669695_locked_512x512.png") no-repeat scroll 1vw 1vh;
+        padding-left: 4vw;
+        background-size: 3vw;
+    }
+    .buttn{
+        width: 8vw;
     }
 }
