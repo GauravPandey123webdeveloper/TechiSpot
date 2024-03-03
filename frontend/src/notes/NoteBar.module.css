@@ -1,5 +1,5 @@
 .sidenav {
-    width: 24vw;
+    width: 20vw;
     box-shadow: 0px 0px 2px;
     height: 90vh;
     border-radius: 2px 0px 0px 0px;
@@ -8,7 +8,6 @@
     padding: 5vh 2vw;
     overflow: auto;
     margin-left: 0vw;
-    margin-right: 1vw;
 }
 
 .sidemenu {
@@ -45,7 +44,7 @@
     color: black;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .sidenav {
         display: none;
     }

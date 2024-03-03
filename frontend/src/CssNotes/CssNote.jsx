@@ -11,8 +11,8 @@ export default function CssNote() {
     <div className={styles.cssnote}>
     <NoteBar/>
       <Cssnav/>
-      
       <Csshome/>
+      <NoteBar/>
     </div>
     </>
   )

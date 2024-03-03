@@ -30,7 +30,6 @@ export default function Post() {
         <i className="fa-regular fa-image"></i>
         <i className="fa-regular fa-face-smile"></i>
         <i className="fa-regular fa-calendar-days"></i>
-
         <button className={styles.Postbtn}>Post</button>
       </div>
       <hr />
