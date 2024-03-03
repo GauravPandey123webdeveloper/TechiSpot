@@ -11,12 +11,8 @@ export default function CssNote() {
     <div className={styles.cssnote}>
     <NoteBar/>
       <Cssnav/>
-<<<<<<< HEAD
-      
       <Csshome/>
-=======
       <NoteBar/>
->>>>>>> 8f3bef6 (Add button was showing up below screen so comment it out and)
     </div>
     </>
   )

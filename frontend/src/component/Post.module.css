@@ -108,7 +108,8 @@
 }
 
 .Postbtn {
-  padding: 3px 20px;
+  padding: 6px 20px;
+  margin-top: -5px;
   font-size: 1.2rem;
   background-color: #1da1f2; 
   color: #fff;
@@ -135,6 +136,9 @@
   font-size: 1.5rem;
   display: flex;
   justify-content: space-around;
+}
+.emojis:hover{
+  cursor: pointer;
 }
 @media screen and (max-width:600px){
   .post{
