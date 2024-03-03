@@ -4,6 +4,8 @@
     width: 75vw;
     margin-left: 23vw;
     margin-right: 2vw;
+    overflow-y: scroll;
+    height: 90vh;
 }
 .heading{
     font-size: 50px;
@@ -13,4 +15,13 @@
     font-size: 22px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
+}
+@media screen and (max-width: 800px){
+    .space{
+        margin-top: 50px;
+        margin-left: 0;
+        margin-right: 0; 
+        width: 100vw;
+        height: 85vh;
+    }
 }
