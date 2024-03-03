@@ -12,7 +12,6 @@ export default function CssNote() {
     <NoteBar/>
       <Cssnav/>
       <Csshome/>
-      <NoteBar/>
     </div>
     </>
   )
