@@ -34,13 +34,13 @@ export default function NavBar() {
                 <span className={styles.menuText}>Tech memes</span>
               </Link>
             </li>
-            <li class="lid">
+            <li className="lid">
               <Link to="/notes">
                 <img src={note} alt="notes" className={styles.icon}></img>
                 <span className={styles.menuText}> Tech Notes</span>
               </Link>
             </li>
-            <li class="lid">
+            <li className="lid">
               <Link to="/sign">
                 <img src={sign} alt="signin" className={styles.icon}></img>
                 <span className={styles.menuText}>Sign in</span>

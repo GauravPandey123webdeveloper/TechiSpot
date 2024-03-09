@@ -1,9 +1,6 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
 import styles from "./NoteBar.module.css";
 import { Link } from "react-router-dom";
-import Meme from "../memes/Meme";
-import CssNote from "../CssNotes/CssNote";
 export default function NoteBar() {
   return (
     <div className={styles.sidenav}>
@@ -134,11 +131,4 @@ export default function NoteBar() {
       </ul>
     </div>
   );
-}
-{
-  /* <li className={styles.lia}>
-              <Link to="/">
-                <img src={home} alt="home" className={styles.icon}></img>
-               <span className={styles.menuText}> Home</span>
-              </Link> */
 }

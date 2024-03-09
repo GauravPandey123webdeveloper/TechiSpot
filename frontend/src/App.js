@@ -22,7 +22,6 @@ function App() {
         <Route path="/signup" element={<Signup/>}/>
         <Route path="/signNext" element={<SignupNext/>}/>
       </Routes>
-      
     </>
   );
 }

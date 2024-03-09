@@ -5,10 +5,10 @@ import SideNavMeme from './SideNavMeme'
 
 export default function Meme() {
   return (
-    <>
+    <div className={styles.meme}>
       <NavBar />
       <SideNavMeme/>
     
-    </>
+    </div>
   )
 }
