@@ -28,10 +28,7 @@
   font-size: 2rem;
   display: flex;
   justify-content: space-around;
-  padding: 1vh;
-  display: flex;
   align-items: center;
-  margin-left: auto; 
 }
 .App{
   box-shadow: 0px 0px 5px;
@@ -51,10 +48,10 @@
   width: 99%;
 }
 
-.profileContainer {
+.userProfile {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .profilePic {
@@ -108,15 +105,14 @@
 }
 
 .Postbtn {
-  padding: 6px 20px;
-  margin-top: -5px;
   font-size: 1.2rem;
   background-color: #1da1f2; 
   color: #fff;
   border: none;
-  border-radius: 25px;
   cursor: pointer;
   transition: background-color 0.3s ease; 
+  border-radius: 10px;
+  padding: 0 1.5vw;
 }
 
 .Postbtn:hover {
@@ -140,12 +136,48 @@
 .emojis:hover{
   cursor: pointer;
 }
+.popup {
+  position: fixed;
+  top: 31%;
+  left: 49.5%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  z-index: 9999; 
+  width: 50%;
+  background-image: linear-gradient(black,rgb(67, 64, 64));
+}
+.popHeader{
+  display: flex;
+  margin: 10px;
+}
+.poptitle{
+  width: 95%;
+  text-align: center;
+}
+.popup textarea {
+  width: 100%;
+  height: 20vh;
+  margin-bottom: 10px;
+  background-image: linear-gradient(rgb(149, 192, 175),rgb(223, 189, 189));
+  color: black;
+  font-size: 1.2rem;
+}
+
+.popup button {
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
 @media screen and (max-width:600px){
-  .post{
+  .post {
     width: 98vw;
     margin-left: 0;
     margin-top: 7.1vh;
     margin-left: 4px;
+  }
+  .popup {
+    width: 100%;
   }
   .Input{
     width: 71vw;

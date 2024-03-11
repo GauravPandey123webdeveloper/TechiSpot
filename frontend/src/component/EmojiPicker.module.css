@@ -1,0 +1,7 @@
+.emojiBox{
+  padding: 1vh;
+  margin-left: 37vw;
+  z-index: '1000';
+  position: sticky;
+  margin-top: 50vh;
+}

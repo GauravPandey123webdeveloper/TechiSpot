@@ -2,12 +2,55 @@ import React, { useState } from "react";
 import styles from "./Post.module.css";
 import PostButtons from "./PostButtons";
 import { postdata } from "./Posts";
+import CloseIcon from "@mui/icons-material/Close";
+import EmojiPickerComponent from "./EmojiPickerComponent";
 export default function Post() {
+  const [isCreatingPost, setIsCreatingPost] = useState(false);
   const [isFollowing, setIsFollowing] = useState(false);
+  const [newPostText, setNewPostText] = useState("");
+  const [posts, setPosts] = useState(postdata);
+  const [isEmojiPickerVisible, setIsEmojiPickerVisible] = useState(false);
   const handleFollowToggle = () => {
     setIsFollowing((prevState) => !prevState);
   };
+  const handlePostClick = (e) => {
+    e.stopPropagation();
+    setIsCreatingPost(true);
+
+  };
+  const handlePostClose = () => {
+    setIsCreatingPost(false);
+  };
+  const handleEmojiClick = () => {
+    setIsEmojiPickerVisible(!isEmojiPickerVisible);
+  };
+
+  const handleEmojiSelection = (emoji) => {
+    setNewPostText((prevText) => prevText + emoji);
+  };
+
+  const handlePostCreation = () => {
+    if (newPostText.trim() !== "") {
+      const newPost = {
+        userProfile: {
+          userImage: "URL_TO_USER_IMAGE",
+          alt: "User Alt",
+          userName: "New User",
+        },
+        userPost: {
+          discription: newPostText,
+          postImage: "URL_TO_POST_IMAGE",
+          alt: "Post Alt",
+        },
+      };
+
+      setPosts((prevPosts) => [newPost, ...prevPosts]);
+      setNewPostText("");
+      setIsCreatingPost(false);
+    }
+  };
   return (
+    <>
     <div className={styles.post}>
       <div className={styles.newPost}>
         <img
@@ -19,40 +62,40 @@ export default function Post() {
           <input
             type="text"
             id="userpost"
-            placeholder="What's going on!"
+            placeholder="Create new post"
             className={styles.Input}
+            onClick={handlePostClick}
           />
         </label>
       </div>
       <hr />
-
-      <div className={styles.emojis}>
-        <i className="fa-regular fa-image"></i>
-        <i className="fa-regular fa-face-smile"></i>
-        <i className="fa-regular fa-calendar-days"></i>
-        <button className={styles.Postbtn}>Post</button>
-      </div>
-      <hr />
-      {postdata.map((data,idx) => (
+          <div className={styles.emojis}>
+            <i onClick={handlePostClick} className="fa-regular fa-image"></i>
+            <i onClick={handleEmojiClick} className="fa-regular fa-face-smile"></i>
+            <i className="fa-regular fa-calendar-days"></i>
+            <button className={styles.Postbtn} onClick={handlePostClick}>Post</button>
+          </div>
+          <hr />
+     
+      {postdata.map((data, idx) => (
         <div className={styles.userpost} key={idx}>
-          <div className={styles.profileContainer}>
-            <div className={styles.usrprofile}>
+          <div className={styles.userProfile}>
+            <div>
               <img
                 src={data.userProfile.userImage}
                 alt={data.userProfile.alt}
                 className={styles.profilePic}
               />
-              {data.userProfile.userName}
-              <button
-                className={`${styles.followButton} ${
-                  isFollowing ? styles.whenclick1 : ""
-                }`}
-                onClick={handleFollowToggle}
-              >
-                {" "}
-                {isFollowing ? "Following" : "Follow +"}
-              </button>
+              <span>{data.userProfile.userName}</span>
             </div>
+            <button
+              className={`${styles.followButton} ${
+                isFollowing ? styles.whenclick1 : ""
+              }`}
+              onClick={handleFollowToggle}
+            >
+              {isFollowing ? "Following" : "Follow +"}
+            </button>
           </div>
           <div className={styles.userpostdata}>
             <p className={styles.discription}>{data.userPost.discription}</p>
@@ -65,6 +108,33 @@ export default function Post() {
           </div>
         </div>
       ))}
-    </div>
+      </div>
+      {isCreatingPost && (
+        <div className={styles.popup}>
+          <div className={styles.popHeader}>
+            <h3 className={styles.poptitle}>Create Post</h3>
+            <button onClick={handlePostClose}>
+              <CloseIcon />
+            </button>
+          </div>
+          <textarea
+            placeholder="What's going on!"
+            value={newPostText}
+            onChange={(e) => setNewPostText(e.target.value)}
+          />
+          <hr />
+          <div className={styles.emojis}>
+            <i className="fa-regular fa-image"></i>
+            <i className="fa-regular fa-face-smile" onClick={handleEmojiClick}></i>
+            <i className="fa-regular fa-calendar-days"></i>
+            <button className={styles.Postbtn} onClick={handlePostCreation}>Post</button>
+          </div>
+          <hr />
+        </div>
+      )}
+      {isEmojiPickerVisible && (
+        <EmojiPickerComponent onSelect={handleEmojiSelection} />
+      )}
+    </>
   );
 }

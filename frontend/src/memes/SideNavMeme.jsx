@@ -4,7 +4,7 @@ import styles from "./SideNavMeme.module.css";
 export default function SideNavMeme() {
   return (
     <div className={styles.sidenavmemes}>
-      <button>Add Category</button>
+      <button className={styles.catagorybtn}>Add Category</button>
       <ul className={styles.sidememe}>
         <li className={styles.memeItem}>
           <i className="fa-solid fa-list"></i>Categories
