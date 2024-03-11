@@ -53,11 +53,11 @@
   transition: background-color 0.4s ease;
 }
 
-.ul1 li:hover {
+/* .ul1 li:hover {
   background-color: #1a73e8;
   cursor: pointer;
   color: #fff;
-}
+} */
 
 .ul1 a {
   text-decoration: none;
