@@ -4,25 +4,35 @@ import PostButtons from "./PostButtons";
 import { postdata } from "./Posts";
 import CloseIcon from "@mui/icons-material/Close";
 import EmojiPickerComponent from "./EmojiPickerComponent";
+
 export default function Post() {
   const [isCreatingPost, setIsCreatingPost] = useState(false);
   const [isFollowing, setIsFollowing] = useState(false);
   const [newPostText, setNewPostText] = useState("");
   const [posts, setPosts] = useState(postdata);
   const [isEmojiPickerVisible, setIsEmojiPickerVisible] = useState(false);
+
   const handleFollowToggle = () => {
     setIsFollowing((prevState) => !prevState);
   };
+  
   const handlePostClick = (e) => {
     e.stopPropagation();
-    setIsCreatingPost(true);
-
+    setIsCreatingPost(true);   
+     
   };
+
   const handlePostClose = () => {
     setIsCreatingPost(false);
+    setNewPostText("");
+    if(isEmojiPickerVisible==true){
+      setIsEmojiPickerVisible(!isEmojiPickerVisible)
+    }
   };
   const handleEmojiClick = () => {
+    if(isCreatingPost==true){
     setIsEmojiPickerVisible(!isEmojiPickerVisible);
+    }
   };
 
   const handleEmojiSelection = (emoji) => {
@@ -43,7 +53,9 @@ export default function Post() {
           alt: "Post Alt",
         },
       };
-
+      if(isEmojiPickerVisible==true){
+        setIsEmojiPickerVisible(!isEmojiPickerVisible)
+      }
       setPosts((prevPosts) => [newPost, ...prevPosts]);
       setNewPostText("");
       setIsCreatingPost(false);
