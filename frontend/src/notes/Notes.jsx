@@ -3,6 +3,7 @@ import NavBar from "../component/NavBar";
 import NoteBar from "./NoteBar";
 import styles from "./Notes.module.css";
 import Notespace from "./Notespace";
+import Mentor from "./Mentor"
 export default function Notes() {
   return (
     <>
@@ -10,6 +11,7 @@ export default function Notes() {
       <div className={styles.notes}>
         <NoteBar />
         <Notespace />
+        <Mentor/>
       </div>
     </>
   );
