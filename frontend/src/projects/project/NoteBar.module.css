@@ -1,23 +1,27 @@
 .sidenav {
-    width: 20vw;
+    width: 21vw;
     box-shadow: 0px 0px 2px;
     height: 90vh;
-    border-radius: 2px 0px 0px 0px;
+    /* border-radius: 2px 0px 0px 0px; */
     position: fixed;
     top: 10;
-    padding: 5vh 2vw;
+    padding: 5vh 0vw;
     overflow: auto;
     margin-left: 0vw;
+    margin-top: 0vh;
 }
 
 .sidemenu {
     list-style: none;
     padding: 0;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    font-family:'Times New Roman', Times, serif;
 }
 
 .courseItem {
-    margin-left: 10px; 
+    /* margin-left: -2vw;  */
+    /* text-align:start; */
+    transition: 200ms;
 }
 
 .courseItem a {
@@ -36,8 +40,10 @@
 
 .courseItem:hover {
     box-shadow: 0px 0px 5px;
-    border-radius: 10px;
-    background-color: rgb(208, 237, 244);
+    /* border-radius: 10px; */
+    background-color: rgb(247, 248, 249);
+    width: 100%;
+
 }
 
 .courseItem:hover a {
@@ -48,4 +54,7 @@
     .sidenav {
         display: none;
     }
+}
+.sidenav::-webkit-scrollbar{
+    display: none;
 }

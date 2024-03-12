@@ -19,7 +19,7 @@ export default function NavBar() {
       <nav className={styles.navigation}>
         <div className={styles.logo}>
           <img src={tech} alt="tech" className={styles.icn} />
-          <div className={styles.logoName}>TechieSpot</div>
+          <div className={styles.logoName}>TechiSpot</div>
         </div>
         <div className={styles.menu}>
           <ul className={styles.ul1}>
@@ -44,7 +44,7 @@ export default function NavBar() {
             <li className="lid">
               <NavLink exact to="/notes" style={({ isActive }) => (isActive ? activeLinkStyle : undefined)}>
                 <img src={note} alt="notes" className={styles.icon}></img>
-                <span className={styles.menuText}> Tech Notes</span>
+                <span className={styles.menuText}> Tech Projects</span>
               </NavLink>
             </li>
             <li className="lid">
