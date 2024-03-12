@@ -89,6 +89,7 @@ export default function Post() {
           </div>
           <hr />
      
+     
       {postdata.map((data, idx) => (
         <div className={styles.userpost} key={idx}>
           <div className={styles.userProfile}>
