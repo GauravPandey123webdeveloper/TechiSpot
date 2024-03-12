@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './SideBar.module.css'
-import  Communities from './all_community/Communities'
+import  Communities from '../home/community/Communities'
 export default function SideBar() {
   return (
     <div className={styles.community}>

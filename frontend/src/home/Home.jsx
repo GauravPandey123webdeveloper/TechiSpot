@@ -2,8 +2,8 @@ import React from 'react'
 import NavBar from '../component/NavBar';
 import styles from './Home.module.css';
 import SideBar from '../component/SideBar';
-import Post from '../component/Post';
-import Team from '../component/Team';
+import Post from './post/Post';
+import Team from './team/Team';
 export default function Home() {
   return (
     <>
