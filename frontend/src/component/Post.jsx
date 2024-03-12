@@ -76,7 +76,7 @@ export default function Post() {
             <button className={styles.Postbtn} onClick={handlePostClick}>Post</button>
           </div>
           <hr />
-     
+      
       {postdata.map((data, idx) => (
         <div className={styles.userpost} key={idx}>
           <div className={styles.userProfile}>
