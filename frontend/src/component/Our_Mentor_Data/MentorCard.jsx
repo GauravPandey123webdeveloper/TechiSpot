@@ -12,7 +12,7 @@ export default function MentorCard() {
         <h4>{member.name}</h4>
         <p>About: {member.about}</p>
         <div className={styles.socialLinks}>
-        <button type="button" class="btn btn-danger">Book Now</button>
+        <button className={styles.btn}>Book Now</button>
         </div>
       </div>
     </div>
