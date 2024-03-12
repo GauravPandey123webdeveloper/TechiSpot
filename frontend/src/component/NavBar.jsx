@@ -5,8 +5,15 @@ import tech from "../assets/tech.png";
 import home from "../assets/home.png";
 import styles from "./NavBar.module.css";
 import sign from "../assets/sign.png";
-import { Link } from "react-router-dom";
+import {NavLink} from "react-router-dom";
 export default function NavBar() {
+  const activeLinkStyle = {
+    fontWeight: "bold",
+    color: "white",
+    backgroundColor: "#1a73e8",
+    padding: "10px",
+    borderRadius: "15px",
+  };
   return (
     <>
       <nav className={styles.navigation}>
@@ -17,34 +24,34 @@ export default function NavBar() {
         <div className={styles.menu}>
           <ul className={styles.ul1}>
             <li className={styles.lia}>
-              <Link to="/">
+              <NavLink exact to="/" style={({ isActive }) => (isActive ? activeLinkStyle : undefined)}>
                 <img src={home} alt="home" className={styles.icon}></img>
                 <span className={styles.menuText}> Home</span>
-              </Link>
+              </NavLink>
             </li>
             <li className={styles.lib}>
-              <Link to="/news">
+              <NavLink exact to="/news" style={({ isActive }) => (isActive ? activeLinkStyle : undefined)}>
                 <img src={news} alt="news" className={styles.icon}></img>
                 <span className={styles.menuText}>Tech news</span>
-              </Link>
+              </NavLink>
             </li>
             <li className={styles.lic}>
-              <Link to="/meme">
+              <NavLink exact to="/meme" style={({ isActive }) => (isActive ? activeLinkStyle : undefined)}>
                 <img src={meme} alt="Meme" className={styles.icon}></img>
                 <span className={styles.menuText}>Tech memes</span>
-              </Link>
+              </NavLink>
             </li>
             <li className="lid">
-              <Link to="/notes">
+              <NavLink exact to="/notes" style={({ isActive }) => (isActive ? activeLinkStyle : undefined)}>
                 <img src={note} alt="notes" className={styles.icon}></img>
                 <span className={styles.menuText}> Tech Notes</span>
-              </Link>
+              </NavLink>
             </li>
             <li className="lid">
-              <Link to="/sign">
+              <NavLink exact to="/sign" style={({ isActive }) => (isActive ? activeLinkStyle : undefined)}>
                 <img src={sign} alt="signin" className={styles.icon}></img>
                 <span className={styles.menuText}>Sign in</span>
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -52,3 +59,4 @@ export default function NavBar() {
     </>
   );
 }
+
