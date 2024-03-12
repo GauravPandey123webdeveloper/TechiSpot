@@ -1,0 +1,62 @@
+.team {
+  width: 25vw;
+  box-shadow: 0px 0px 2px;
+  height: 92vh;
+
+  position: fixed;
+  right: 0;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+.teamhead{
+  font-size: 3vw;
+  /* margin-left: 1vw;
+  margin-right: -2vw;
+  margin-bottom: 1vw; */
+  font-family: emoji;
+  background: linear-gradient(to right,#e4322c ,rgb(186, 110, 17),#a2ae1c  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.team::-webkit-scrollbar {
+  width: 10px;
+}
+
+.team::-webkit-scrollbar-track {
+  background: black;
+}
+
+.team::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 5px;
+}
+
+.team::-webkit-scrollbar-thumb:hover {
+  background: rgb(97, 95, 95);
+}
+
+.h1 {
+  text-align: center;
+  width: 26vw;
+  position: fixed;
+  background-color: #000000;
+  z-index: 10;
+  box-shadow: 0px 0px 1px inset;
+  padding-top: 1.5vh;
+  border-radius: 2px;
+  height: 9.5vh;
+  margin-right:-10vw;
+}
+
+.cards {
+  margin-top: 11vh;
+  top: 50;
+  position: relative;
+  z-index: 0;
+}
+@media screen and (max-width: 600px) {
+  .team {
+    display: none;
+  }
+}

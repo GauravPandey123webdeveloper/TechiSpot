@@ -34,14 +34,14 @@
     padding: 1vh;
     display: flex;
     align-items: center;
-    margin-left: auto; 
+    margin-left: auto;
   }
   .App{
     box-shadow: 0px 0px 5px;
     font-size: 2rem;
     display: flex;
     justify-content: space-around;
-    padding: 1vh; 
+    padding: 1vh;
   }
   .pstimg {
     box-shadow: 0px 0px 2px;
@@ -71,7 +71,8 @@
   .username {
     font-size: 1.2rem;
     font-weight: bold;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+    text-decoration: underline;
   }
   
   .discription {
@@ -80,18 +81,19 @@
   }
   
   .followButton {
-    background-color: #1f2122;
-    color: #fff;
     border: none;
-    padding: 3px 20px;
-    border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
-    margin-left: 25vw;
+    display: inline;
+    background-color: rgba(90, 90, 90, 0.554);
+    border-radius: 5px;
+    justify-content: flex-end;
+    margin-left: 50vw;
+    padding: 3px 15px;
+    color: white;
   }
-  
-  .followButton:hover {
-    background-color: #8c98a4;
+  .followButton:hover{
+    background-color: #a5a5a5;
   }
   
   .userDP {
@@ -114,16 +116,16 @@
     padding: 6px 20px;
     margin-top: -5px;
     font-size: 1.2rem;
-    background-color: #1da1f2; 
+    background-color: #1da1f2;
     color: #fff;
     border: none;
     border-radius: 25px;
     cursor: pointer;
-    transition: background-color 0.3s ease; 
+    transition: background-color 0.3s ease;
   }
   
   .Postbtn:hover {
-    background-color: #0d8ecf; 
+    background-color: #0d8ecf;
   }
   
   .whenclick {
@@ -177,5 +179,37 @@
   }
   .post::-webkit-scrollbar{
     display: none;
+  }
+  .popup {
+    position: fixed;
+    top: 31%;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    z-index: 9999;
+    width: 50%;
+    background-image: linear-gradient(black,rgb(67, 64, 64));
+  }
+  .popHeader{
+    display: flex;
+    margin: 10px;
+  }
+  .poptitle{
+    width: 95%;
+    text-align: center;
+  }
+  .popup textarea {
+    width: 100%;
+    height: 20vh;
+    margin-bottom: 10px;
+    background-image: linear-gradient(rgb(149, 192, 175),rgb(223, 189, 189));
+    color: black;
+    font-size: 1.2rem;
+  }
+  .usern{
+    text-decoration: underline;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
   }
   
