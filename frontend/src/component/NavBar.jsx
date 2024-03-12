@@ -1,10 +1,10 @@
-import meme from "../assets/meme.png";
-import news from "../assets/news.png";
-import note from "../assets/notes.png";
-import tech from "../assets/tech.png";
-import home from "../assets/home.png";
+import meme from "../assets/images/meme.png";
+import news from "../assets/images/news.png";
+import note from "../assets/images/notes.png";
+import tech from "../assets/images/tech.png";
+import home from "../assets/images/home.png";
 import styles from "./NavBar.module.css";
-import sign from "../assets/sign.png";
+import sign from "../assets/images/sign.png";
 import {NavLink} from "react-router-dom";
 export default function NavBar() {
   const activeLinkStyle = {

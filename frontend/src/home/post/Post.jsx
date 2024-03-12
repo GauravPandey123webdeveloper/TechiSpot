@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Post.module.css";
-import PostButtons from "./PostButtons";
+import PostButtons from './PostButtons'
 import { postdata } from "./Posts";
 import CloseIcon from "@mui/icons-material/Close";
 import EmojiPickerComponent from "./EmojiPickerComponent";

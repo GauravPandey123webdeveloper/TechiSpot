@@ -1,7 +1,7 @@
 import React from 'react'
 import Cssnav from '../navbar/Cssnav'
-import NavBar from '../component/NavBar'
-import SideBar from '../component/SideBar'
+import NavBar from '../../component/NavBar'
+import SideBar from '../../component/SideBar'
 
 import styles from  './CssMargin.module.css'
 

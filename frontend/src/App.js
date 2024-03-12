@@ -2,10 +2,10 @@ import { Routes ,Route } from "react-router-dom";
 import Home from "./home/Home";
 import News from "./news/News";
 import Meme from "./memes/Meme";
-import Notes from "./notes/Notes";
-import Sign from './sign/Sign'
-import Signup from "./signup/Signup";
-import CssNote from "./CssNotes/CssNote";
+import Notes from "./projects/project/Notes";
+import Sign from './authentication/sign/Sign'
+import Signup from "./authentication/signup/Signup";
+import CssNote from "./projects/CssNotes/CssNote";
 import Error from "./error/Error";
 function App() {
   return (
