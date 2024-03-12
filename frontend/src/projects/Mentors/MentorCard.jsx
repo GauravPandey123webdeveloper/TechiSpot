@@ -1,9 +1,6 @@
 import React from "react";
 import styles from "./MentorCard.module.css";
 import data from "./Mentor_Data";
-import linkedIn from "../../assets/linkedin.png";
-import gitHub from "../../assets/github.png";
-
 export default function MentorCard() {
   let infoCard = data.map((member, index) => (
     <div className={styles.info} key={index}>

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Team.module.css";
-import TeamCard from "./our_Team_Data/TeamCard";
+import TeamCard from "./TeamCard";
 export default function Team() {
   return (
     <div className={styles.team}>

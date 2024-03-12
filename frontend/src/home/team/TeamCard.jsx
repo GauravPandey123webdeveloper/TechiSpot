@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./TeamCard.module.css";
 import data from "./Team_Data";
-import linkedIn from "../../assets/linkedin.png";
-import gitHub from "../../assets/github.png";
+import linkedIn from "../../assets/images/linkedin.png";
+import gitHub from "../../assets/images/github.png";
 
 export default function TeamCard() {
   let infoCard = data.map((member, index) => (

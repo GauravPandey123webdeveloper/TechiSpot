@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import styles from "./NewsPost.module.css";
-import PostButtons from "../component/PostButtons";
+import PostButtons from "../home/post/PostButtons";
 import { postdata } from "./NewsPosts";
 import CloseIcon from "@mui/icons-material/Close";
-import EmojiPickerComponent from "../component/EmojiPickerComponent";
+import EmojiPickerComponent from "../home/post/EmojiPickerComponent";
 export default function Post() {
   const [isCreatingPost, setIsCreatingPost] = useState(false);
   const [isFollowing, setIsFollowing] = useState(false);

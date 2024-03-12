@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Mentor.module.css";
-import MentorCard from "../component/Our_Mentor_Data/MentorCard";
+import MentorCard from "./MentorCard";
 export default function Team() {
   return (
     <div className={styles.team}>
