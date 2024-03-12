@@ -4,6 +4,7 @@ import PostButtons from "./PostButtons";
 import { postdata } from "./Posts";
 import CloseIcon from "@mui/icons-material/Close";
 import EmojiPickerComponent from "./EmojiPickerComponent";
+import Upload from "./Upload";
 
 export default function Post() {
   const [isCreatingPost, setIsCreatingPost] = useState(false);
@@ -11,27 +12,48 @@ export default function Post() {
   const [newPostText, setNewPostText] = useState("");
   const [posts, setPosts] = useState(postdata);
   const [isEmojiPickerVisible, setIsEmojiPickerVisible] = useState(false);
+  const [isUploadVisible, setIsUploadVisible] = useState(false);
 
   const handleFollowToggle = () => {
     setIsFollowing((prevState) => !prevState);
   };
-  
+
   const handlePostClick = (e) => {
     e.stopPropagation();
-    setIsCreatingPost(true);   
-     
+    setIsCreatingPost(true);
   };
 
   const handlePostClose = () => {
     setIsCreatingPost(false);
     setNewPostText("");
-    if(isEmojiPickerVisible==true){
-      setIsEmojiPickerVisible(!isEmojiPickerVisible)
+    if (isEmojiPickerVisible === true) {
+      setIsEmojiPickerVisible(false);
+    }
+    if (isUploadVisible === true) {
+      setIsUploadVisible(false);
     }
   };
+
+  const handleUploadClose = () => {
+    setIsUploadVisible(false);
+  };
+
   const handleEmojiClick = () => {
-    if(isCreatingPost==true){
-    setIsEmojiPickerVisible(!isEmojiPickerVisible);
+    if (isCreatingPost === true) {
+      setIsEmojiPickerVisible(!isEmojiPickerVisible);
+    }
+    else {
+      setIsCreatingPost(!isCreatingPost);
+      setIsEmojiPickerVisible(!isEmojiPickerVisible);
+    }
+  };
+
+  const handleUpload = () => {
+    if (isCreatingPost === true) {
+      setIsUploadVisible(!isUploadVisible);
+    } else {
+      setIsCreatingPost(!isCreatingPost);
+      setIsUploadVisible(!isUploadVisible);
     }
   };
 
@@ -53,72 +75,81 @@ export default function Post() {
           alt: "Post Alt",
         },
       };
-      if(isEmojiPickerVisible==true){
-        setIsEmojiPickerVisible(!isEmojiPickerVisible)
+      if (isEmojiPickerVisible === true) {
+        setIsEmojiPickerVisible(false);
+      }
+      if (isUploadVisible === true) {
+        setIsUploadVisible(false);
       }
       setPosts((prevPosts) => [newPost, ...prevPosts]);
       setNewPostText("");
       setIsCreatingPost(false);
     }
   };
+
   return (
     <>
-    <div className={styles.post}>
-      <div className={styles.newPost}>
-        <img
-          src="https://i.pinimg.com/564x/ac/18/49/ac18498ee93158817a026a82e8655fa7.jpg"
-          alt="user"
-          className={styles.userDP}
-        />
-        <label htmlFor="userpost">
-          <input
-            type="text"
-            id="userpost"
-            placeholder="Create new post"
-            className={styles.Input}
-            onClick={handlePostClick}
+      <div className={styles.post}>
+        <div className={styles.newPost}>
+          <img
+            src="https://i.pinimg.com/564x/ac/18/49/ac18498ee93158817a026a82e8655fa7.jpg"
+            alt="user"
+            className={styles.userDP}
           />
-        </label>
-      </div>
-      <hr />
-          <div className={styles.emojis}>
-            <i onClick={handlePostClick} className="fa-regular fa-image"></i>
-            <i onClick={handleEmojiClick} className="fa-regular fa-face-smile"></i>
-            <i className="fa-regular fa-calendar-days"></i>
-            <button className={styles.Postbtn} onClick={handlePostClick}>Post</button>
-          </div>
-          <hr />
-      {postdata.map((data, idx) => (
-        <div className={styles.userpost} key={idx}>
-          <div className={styles.userProfile}>
-            <div>
-              <img
-                src={data.userProfile.userImage}
-                alt={data.userProfile.alt}
-                className={styles.profilePic}
-              />
-              <span>{data.userProfile.userName}</span>
-            </div>
-            <button
-              className={`${styles.followButton} ${
-                isFollowing ? styles.whenclick1 : ""
-              }`}
-              onClick={handleFollowToggle}
-            >
-              {isFollowing ? "Following" : "Follow +"}
-            </button>
-          </div>
-          <div className={styles.userpostdata}>
-            <p className={styles.discription}>{data.userPost.discription}</p>
-            <img
-              src={data.userPost.postImage}
-              alt={data.userPost.alt}
-              className={styles.pstimg}
+          <label htmlFor="userpost">
+            <input
+              type="text"
+              id="userpost"
+              placeholder="Create new post"
+              className={styles.Input}
+              onClick={handlePostClick}
             />
-            <PostButtons />
-          </div>
+          </label>
         </div>
-      ))}
+        <hr />
+        <div className={styles.emojis}>
+          <i onClick={handleUpload} className="fa-regular fa-image"></i>
+          <i
+            onClick={handleEmojiClick}
+            className="fa-regular fa-face-smile"
+          ></i>
+          <i className="fa-regular fa-calendar-days"></i>
+          <button className={styles.Postbtn} onClick={handlePostClick}>
+            Post
+          </button>
+        </div>
+        <hr />
+        {postdata.map((data, idx) => (
+          <div className={styles.userpost} key={idx}>
+            <div className={styles.userProfile}>
+              <div>
+                <img
+                  src={data.userProfile.userImage}
+                  alt={data.userProfile.alt}
+                  className={styles.profilePic}
+                />
+                <span>{data.userProfile.userName}</span>
+              </div>
+              <button
+                className={`${styles.followButton} ${
+                  isFollowing ? styles.whenclick1 : ""
+                }`}
+                onClick={handleFollowToggle}
+              >
+                {isFollowing ? "Following" : "Follow +"}
+              </button>
+            </div>
+            <div className={styles.userpostdata}>
+              <p className={styles.discription}>{data.userPost.discription}</p>
+              <img
+                src={data.userPost.postImage}
+                alt={data.userPost.alt}
+                className={styles.pstimg}
+              />
+              <PostButtons />
+            </div>
+          </div>
+        ))}
       </div>
       {isCreatingPost && (
         <div className={styles.popup}>
@@ -135,16 +166,32 @@ export default function Post() {
           />
           <hr />
           <div className={styles.emojis}>
-            <i className="fa-regular fa-image"></i>
-            <i className="fa-regular fa-face-smile" onClick={handleEmojiClick}></i>
+            <i className="fa-regular fa-image" onClick={handleUpload}></i>
+            <i
+              className="fa-regular fa-face-smile"
+              onClick={handleEmojiClick}
+            ></i>
             <i className="fa-regular fa-calendar-days"></i>
-            <button className={styles.Postbtn} onClick={handlePostCreation}>Post</button>
+            <button className={styles.Postbtn} onClick={handlePostCreation}>
+              Post
+            </button>
           </div>
           <hr />
         </div>
       )}
       {isEmojiPickerVisible && (
         <EmojiPickerComponent onSelect={handleEmojiSelection} />
+      )}
+      {isUploadVisible && (
+        <div className={styles.popup}>
+          <div className={styles.popHeader}>
+            <h3 className={styles.poptitle}>Upload</h3>
+            <button onClick={handleUploadClose}>
+              <CloseIcon />
+            </button>
+          </div>
+          <Upload />
+        </div>
       )}
     </>
   );
