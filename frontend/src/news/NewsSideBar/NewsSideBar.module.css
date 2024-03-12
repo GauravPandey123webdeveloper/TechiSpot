@@ -1,4 +1,4 @@
-.sideNav{
+.sideNav {
     margin-top: 9.7vh;
     margin-top: 10vh;
 
@@ -9,10 +9,10 @@
     position: fixed;
     width: 25%;
 
-   overflow:scroll;
+    overflow: scroll;
 }
 
-.navHeading{
+.navHeading {
     text-align: center;
     margin-bottom: 5px;
     /* position: sticky; */
@@ -21,32 +21,34 @@
     cursor: pointer;
     background: -webkit-linear-gradient(#e8cf13, #ff0000);
     -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
     font-family: emoji;
     border-radius: 1px;
-   width: 25%;
-   margin-left: 3px;
-   font-size: 48.3px;
+    width: 25%;
+    margin-left: 3px;
+    font-size: 48.3px;
 }
 
-.navHeading i{
-   color: rgb(255, 255, 11);
+.navHeading i {
+    color: rgb(255, 255, 11);
 }
 
-.sideMenu{
+.sideMenu {
     list-style: none;
     padding: 2vh 2vw 10vh;
     font-size: 1.2rem;
     margin-top: 1vh;
 }
-.techItems{
+
+.techItems {
     margin-top: 1.3vh;
     padding: 1vh;
     font-size: 2.4vh;
     cursor: pointer;
     /* box-shadow: 0px 1px 2px rgb(248, 228, 231); */
 }
-.techItems:hover{
+
+.techItems:hover {
     box-shadow: 0px 0px 5px;
     border-radius: 10px;
     background-color: rgb(243, 239, 237);
