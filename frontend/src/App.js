@@ -1,7 +1,7 @@
 import { Routes ,Route } from "react-router-dom";
 import Home from "./home/Home";
-import News from "./news/News";
-import Meme from "./memes/Meme";
+import News from "./technews/News";
+import Meme from "./techmemes/Meme";
 import Notes from "./notes/Notes";
 import Sign from './sign/Sign'
 import Signup from "./signup/Signup";
