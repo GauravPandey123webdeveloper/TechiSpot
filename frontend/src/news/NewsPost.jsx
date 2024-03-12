@@ -1,3 +1,5 @@
+import React from "react";
+import NewsPostButtons from "./NewsSideBar/NewsPostButtons";
 import React, { useState } from "react";
 import styles from "./NewsPost.module.css";
 import PostButtons from "../component/PostButtons";
@@ -109,6 +111,8 @@ export default function Post() {
               alt={data.userPost.alt}
               className={styles.pstimg}
             />
+
+            <NewsPostButtons/>
             <PostButtons />
           </div>
         </div>
