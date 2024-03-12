@@ -24,34 +24,34 @@ export default function NoteBar() {
         <li className={styles.courseItem}>
           {" "}
           <Link to="/notes">
-            <i class="fa-brands fa-js"> </i>Javascript
+            <i class="fa-brands fa-js"> </i>JavaScript
+          </Link>
+        </li>
+        <li className={styles.courseItem}>
+          {" "}
+          <Link to="/projects/react/basic">
+            {" "}
+            <i class="fa-brands fa-react"></i>ReactJS
+          </Link>
+        </li>
+        <li className={styles.courseItem}>
+          {" "}
+          <Link to="/notes">
+            <i class="fa-brands fa-reddit-alien"></i>JAVA
           </Link>
         </li>
         <li className={styles.courseItem}>
           {" "}
           <Link to="/notes">
             {" "}
-            <i class="fa-brands fa-react"></i>react
-          </Link>
-        </li>
-        <li className={styles.courseItem}>
-          {" "}
-          <Link to="/notes">
-            <i class="fa-brands fa-reddit-alien"></i>redux
+            <i class="fa-brands fa-java"></i>Data Structures
           </Link>
         </li>
         <li className={styles.courseItem}>
           {" "}
           <Link to="/notes">
             {" "}
-            <i class="fa-brands fa-java"></i>java
-          </Link>
-        </li>
-        <li className={styles.courseItem}>
-          {" "}
-          <Link to="/notes">
-            {" "}
-            <i class="fa-solid fa-d"></i>DSA
+            <i class="fa-solid fa-d"></i>Algorithms
           </Link>
         </li>
         <li className={styles.courseItem}>
