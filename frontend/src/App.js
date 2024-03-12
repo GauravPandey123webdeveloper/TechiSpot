@@ -5,8 +5,11 @@ import Meme from "./memes/Meme";
 import Notes from "./projects/project/Notes";
 import Sign from './authentication/sign/Sign'
 import Signup from "./authentication/signup/Signup";
-import CssNote from "./projects/CssNotes/CssNote";
+
 import Error from "./error/Error";
+import BasicReact from "./projects/ReactProjects/BasicReact";
+import IntermediateReact from "./projects/ReactProjects/IntermediateReact";
+import AdvancedReact from "./projects/ReactProjects/AdvancedReact";
 function App() {
   return (
     <>
@@ -16,9 +19,12 @@ function App() {
         <Route path="/meme" element={<Meme/>}/>
         <Route path="/notes" element={<Notes/>}/>
         <Route path="*" element={<Error/>}/>
-        <Route path="/notes/css" element={<CssNote/>}/>
+      
         <Route path="/sign" element={<Sign/>}/>
         <Route path="/signup" element={<Signup/>}/>
+        <Route path="/projects/react/basic" element={<BasicReact/>}/>
+        <Route path="/projects/react/intermediate" element={<IntermediateReact/>}/>
+        <Route path="/projects/react/advanced" element={<AdvancedReact/>}/>
       </Routes>
     </>
   );
