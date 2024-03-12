@@ -12,6 +12,27 @@ Techispot is a community-driven platform for engineers, where they can connect, 
 
 - **Notes**: Access curated tech-related notes, tutorials, and resources. Learn and grow together.
 
+## File Structure
+
+- `src/`
+  - `home/`: Contains the Home component.
+  - `news/`: Contains the News component.
+  - `memes/`: Contains the Meme component.
+  - `notes/`: Contains the Notes component.
+  - `sign/`: Contains the Sign component.
+  - `signup/`: Contains the Signup component.
+  - `CssNotes/`: Contains the CssNote component.
+  - `error/`: Contains the Error component.
+  - `signup/`: Contains the SignupNext component.
+  - `App.js`: Main application file containing the routing setup.
+
+### Quick Glimpse Into Routing
+
+- `Routes`: The `Routes` component from `react-router-dom` is used to define the routes of the application.
+- `Route`: The `Route` component is used to specify which component should render based on the URL path.
+- Each `Route` component has a `path` prop defining the URL path it should match, and an `element` prop specifying the component to render when the path matches.
+- The `*` route is a catch-all route that matches any other paths not specified above. It renders the `Error` component, indicating that the URL is not found.
+
 ## Installation
 
 Follow these steps to run Techispot on your local machine:
@@ -39,9 +60,10 @@ Follow these steps to run Techispot on your local machine:
 5. Start the development server:
    ```
    npm start
-   ```
 
-## Contributing
+## Notes
 
-We welcome contributions from the community! If you have ideas, bug fixes, or new features to propose, feel free to submit a pull request.
+- Ensure you have Node.js and npm installed on your machine.
+- Make sure all dependencies are properly installed before running the application.
 
+That's it! You should now have a basic understanding of how the routing is set up in this React application. Feel free to explore and modify the components and routes as needed.
