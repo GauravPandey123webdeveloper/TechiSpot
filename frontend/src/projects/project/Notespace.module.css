@@ -1,11 +1,12 @@
 .space{
     padding: 10px 60px 0px 60px; 
-    border: 2px solid yellow; 
-    width: 55vw;
-    margin-left: 20vw;
+    width: 54vw;
+    margin-left: 21vw;
     margin-right: 2vw;
     overflow-y: scroll;
     height: 90vh;
+    box-shadow: 0px 0px 2px;
+    position: fixed;
 }
 .heading{
     font-size: 50px;
