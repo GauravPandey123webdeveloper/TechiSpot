@@ -7,6 +7,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
+
 }
 .tile{
     /* display: flex; */
@@ -21,5 +22,8 @@
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgb(180, 180, 179) ;
   padding: 2.5vh;
-}
+  background-image: url(https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg?w=1800&t=st=1710265009~exp=1710265609~hmac=815f7658dd120f2ad2f08eda29da45454c786cde83eb9510c4154908ba720c4b);
+  color: aliceblue;
+  overflow: scroll;
 
+}
