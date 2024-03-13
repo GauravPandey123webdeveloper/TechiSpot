@@ -1,6 +1,6 @@
 .post {
   width: 51vw;
-  box-shadow: 0px 0px 10px;
+  box-shadow: 0px 0px 2px;
   height: 100vh;
   padding: 1vh;
   margin-left: 24vw;
@@ -8,6 +8,13 @@
   position: fixed;
   top: 20;
   padding-bottom: 20vh;
+}
+.blank{
+  width:100vw;
+  height: 90vh;
+  background-color:#1da0f228 ;
+  z-index: 7000;
+  position: fixed;
 }
 .reactions > * {
   margin-right: 10px;
@@ -138,17 +145,16 @@
 }
 .popup {
   position: fixed;
-  top: 39%;
+  top: 37.5%;
   left: 49.5%;
   transform: translate(-50%, -50%);
-  background-color: white;
   padding: 20px;
   z-index: 9999; 
   width: 50%;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.352);
   background-color: rgb(9, 9, 9);
-  border-bottom-left-radius: 10%;
-  border-bottom-right-radius: 10%;
+  border-bottom-left-radius: 6%;
+  border-bottom-right-radius: 6%;
 }
 .popHeader{
   display: flex;
@@ -175,7 +181,10 @@
 .popup button {
   border-radius: 10px;
   margin-right: 10px;
-  background-color: #1da1f2;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-weight: 900;
 }
 
 @media screen and (max-width:600px){
