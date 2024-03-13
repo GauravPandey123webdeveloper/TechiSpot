@@ -89,7 +89,8 @@ export default function Post() {
 
   return (
     <>
-   {isCreatingPost&& <div className={styles.blank}></div>}
+      {/*User post creation section */}
+      {isCreatingPost && <div className={styles.blank}></div>}
       <div className={styles.post}>
         <div className={styles.newPost}>
           <img
@@ -97,6 +98,7 @@ export default function Post() {
             alt="user"
             className={styles.userDP}
           />
+          {/*New post creation input box */}
           <label htmlFor="userpost">
             <input
               type="text"
@@ -109,6 +111,7 @@ export default function Post() {
           </label>
         </div>
         <hr />
+        {/*Post card creation by using map on the array imported from Posts.js as postdata  */}
         {postdata.map((data, idx) => (
           <div className={styles.userpost} key={idx}>
             <div className={styles.userProfile}>
@@ -136,17 +139,20 @@ export default function Post() {
                 alt={data.userPost.alt}
                 className={styles.pstimg}
               />
+              {/*PostButtons for handling all the activites user wants to perform on a published post.
+              Ex : Like, Share the post , Comment on the Post */}
               <PostButtons />
             </div>
           </div>
         ))}
       </div>
+      {/* When user want to create an new post and clicks on "Create New Post Section" */}
       {isCreatingPost && (
         <div className={styles.popup}>
           <div className={styles.popHeader}>
             <h3 className={styles.poptitle}>Create Post</h3>
             <button onClick={handlePostClose}>
-              <CloseIcon/>
+              <CloseIcon />
             </button>
           </div>
           <textarea
@@ -169,9 +175,11 @@ export default function Post() {
           <hr />
         </div>
       )}
+      {/*When either user directly clicks on emoji button (or click on the emoji button when inside of create post section) to open emoji tray*/}
       {isEmojiPickerVisible && (
         <EmojiPickerComponent onSelect={handleEmojiSelection} />
       )}
+      {/*When User want to upload something with their post */}
       {isUploadVisible && (
         <div className={styles.popup}>
           <div className={styles.popHeader}>

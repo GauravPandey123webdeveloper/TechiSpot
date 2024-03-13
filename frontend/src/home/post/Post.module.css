@@ -259,3 +259,113 @@ table{
   border-radius: 100%;
   margin-right: 10px;
 }
+/* For the share popup */
+.share_overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0%;
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+.share_container {
+  height: 50%;
+  width: 40%;
+  border: 2px solid rgba(240, 236, 236, 0.5);
+  background-color: black;
+  border-radius: 25px;
+  box-shadow: 0px 0px 30px inset gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.close_share_btn {
+  position: fixed;
+  right: 30.5%;
+  top: 25.5%;
+}
+.share_heading {
+  font-size: 3rem;
+  margin-top: -3vh;
+}
+.copy_link {
+  background-color: #f2eeee;
+  height: 5.7vh;
+  border-radius: 40px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1vh;
+  align-items: center;
+}
+.link {
+  background-color: #f2eeee;
+  border-radius: 40px;
+  height: 2rem;
+  padding-left: 1.2vw;
+  font-size: 1.5rem;
+  border-style: none;
+}
+.copy_btn {
+  border-radius: 30px;
+  font-size: 1.3rem;
+  border-style: none;
+  background-color: #1da1f2;
+  color: white;
+  height: 5vh;
+  width: 6vw;
+  margin-right: 0.3vw;
+}
+.copy_btn:hover {
+  background-color: #065f8c;
+}
+.copy_btn:active {
+  background-color: #5bb9f3;
+}
+.socials {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  gap: 2vw;
+  font-size: 0.7em;
+}
+.socials::-webkit-scrollbar {
+  display: none;
+}
+.line {
+  margin-top: 2vh;
+  border: 1px solid white;
+  width: 85%;
+  margin-bottom: 3vh;
+}
+.scroll_btn {
+  position: fixed;
+  left: 30.5%;
+  top: 44%;
+  width: 4.2vw;
+  height: 7.6vh;
+  border-radius: 100px;
+  border-style: none;
+  background-color: rgb(64, 67, 69);
+  color: white;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.7);
+}
+.scroll_btn:hover {
+  background-color: #065f8c;
+}
+.scroll_btn:active {
+  background-color: #5bb9f3;
+}
+.right {
+  position: fixed;
+  left: 64.2%;
+}
