@@ -10,7 +10,7 @@ export default function TeamCard() {
       <img src={member.pro} className={styles.img} alt="Profile_Pic" />
       <div className={styles.data}>
         <h4>{member.name}</h4>
-        <p>About: {member.about}</p>
+        <p>{member.about}</p>
         <div className={styles.socialLinks}>
           <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
             <img src={linkedIn} alt="linkedIn" className={styles.linkedin}/>
