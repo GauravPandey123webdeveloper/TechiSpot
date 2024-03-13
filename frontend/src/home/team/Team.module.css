@@ -2,7 +2,7 @@
   width: 25vw;
   box-shadow: 0px 0px 2px;
   height: 92vh;
-
+  z-index: -100;
   position: fixed;
   right: 0;
   overflow: scroll;
