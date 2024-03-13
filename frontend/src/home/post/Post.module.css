@@ -147,7 +147,9 @@
   position: fixed;
   top: 37.5%;
   left: 49.5%;
+  height: 50vh;
   transform: translate(-50%, -50%);
+  overflow: auto;
   padding: 20px;
   z-index: 9999; 
   width: 50%;
@@ -224,4 +226,36 @@
 }
 .post::-webkit-scrollbar{
   display: none;
+}
+.commentsInput{
+  position: fixed;
+  height: 10vh;
+  top: 63.9%;
+  left: 24.5%;
+  z-index: 9999; 
+  width: 50%;
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.352); */
+  background-color: rgb(29, 29, 29);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: none;
+}
+.commInp{
+  margin-top: 1.5vh;
+  margin-left: 1vw;
+  width: 40.5vw;
+  margin-right: 1vw;
+  border-radius: 10px;
+}
+.postBtn{
+  border-radius: 10px;
+  width: 6.5vw;
+}
+table{
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+.profileImg{
+  border-radius: 100%;
+  margin-right: 10px;
 }
