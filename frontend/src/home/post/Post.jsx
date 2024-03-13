@@ -89,6 +89,7 @@ export default function Post() {
 
   return (
     <>
+   {isCreatingPost&& <div className={styles.blank}></div>}
       <div className={styles.post}>
         <div className={styles.newPost}>
           <img
@@ -102,21 +103,10 @@ export default function Post() {
               id="userpost"
               placeholder="Create new post"
               className={styles.Input}
+              readOnly
               onClick={handlePostClick}
             />
           </label>
-        </div>
-        <hr />
-        <div className={styles.emojis}>
-          <i onClick={handleUpload} className="fa-regular fa-image"></i>
-          <i
-            onClick={handleEmojiClick}
-            className="fa-regular fa-face-smile"
-          ></i>
-          <i className="fa-regular fa-calendar-days"></i>
-          <button className={styles.Postbtn} onClick={handlePostClick}>
-            Post
-          </button>
         </div>
         <hr />
         {postdata.map((data, idx) => (
@@ -156,11 +146,11 @@ export default function Post() {
           <div className={styles.popHeader}>
             <h3 className={styles.poptitle}>Create Post</h3>
             <button onClick={handlePostClose}>
-              <CloseIcon />
+              <CloseIcon/>
             </button>
           </div>
           <textarea
-            placeholder="What's going on!"
+            placeholder="   What's going on!"
             value={newPostText}
             onChange={(e) => setNewPostText(e.target.value)}
           />

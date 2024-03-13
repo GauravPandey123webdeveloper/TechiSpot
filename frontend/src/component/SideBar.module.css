@@ -1,4 +1,4 @@
-.community{
+.community {
     width: 24vw;
     box-shadow: 0px 0px 2px;
     height: 90vh;
@@ -29,46 +29,85 @@
     height: 9.5vh;
 
 }
- 
+
 h1 {
     display: inline;
-    font-size: 33px; 
+    font-size: 33px;
 }
-.iconButton{
-  margin-left: 100px;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  font-size: 26px;
-  color: #f2eeee;
+
+.iconButton {
+    margin-left: 100px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 26px;
+    color: #f2eeee;
 }
-.iconButton:hover{
-   font-size: 28px;
+
+.iconButton:hover {
+    font-size: 28px;
 }
+
 .chats {
     margin-top: 6vh;
     margin-left: -2.6vh;
     width: 23vw;
-    top: 50; 
-    position: relative; 
+    top: 50;
+    position: relative;
 }
+
 @media screen and (max-width:600px) {
     .community {
         display: none;
     }
 }
-.community::-webkit-scrollbar{
+
+.community::-webkit-scrollbar {
     display: none;
-  }
-  .commhead{
+}
+
+.commhead {
     font-size: 3vw;
     margin-left: 1vw;
     margin-right: -2vw;
     margin-bottom: 1vw;
     font-family: emoji;
-    background: linear-gradient(to right,#f66492 ,rgb(228, 227, 227),#5bf7f1   );
+    background: linear-gradient(to right, #f66492, rgb(228, 227, 227), #5bf7f1);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-  }
-  
+}
+
+
+
+
+/* Modal styles */
+
+.modalContent {
+    background-color: black;
+    padding: 50px;
+    border-radius: 20px;
+    width: 30vw;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.modalContent h2 {
+    color: white;
+    font-size: 25px;
+}
+
+.modalContent button {
+    margin-right: 10px;
+}
+
+.input {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 5px solid transparent; 
+    background-color: transparent;
+}
+

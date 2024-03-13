@@ -7,7 +7,7 @@ export default function MentorCard() {
       <img src={member.pro} className={styles.img} alt="Profile_Pic" />
       <div className={styles.data}>
         <h4>{member.name}</h4>
-        <p>About: {member.about}</p>
+        <p>{member.about}</p>
         <div className={styles.socialLinks}>
         <button className={styles.btn}>Book Now</button>
         </div>

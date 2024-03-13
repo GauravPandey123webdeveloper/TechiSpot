@@ -35,7 +35,13 @@ export default function PostButtons() {
 
   function handleCommentClick(e) {
     e.stopPropagation();
-    setIsCommentsPost(true);
+    if (isLoggedIn) {
+      setIsCommentsPost(true);
+      
+    } 
+    else {
+      alert("Please log in to comment .");
+    }
   }
 
   function handleCommentClose() {
@@ -43,7 +49,10 @@ export default function PostButtons() {
   }
 
   function handleComments() {
-    setComments([...comments, newComment]);
+    if(newComment.trim()!==""){
+      setComments([...comments, newComment]);
+      setNewComment("")
+    }
   }
 
   return (
@@ -56,22 +65,25 @@ export default function PostButtons() {
       <i className="fa-regular fa-share-from-square"></i>
       <i className="fa-regular fa-bookmark"></i>
       {isCommentsPost && (
+        <div>
         <div className={styles.popup}>
           <div className={styles.popHeader}>
             <h3 className={styles.poptitle}>Comments</h3>
             <button onClick={handleCommentClose}>close</button>
           </div>
           {comments.map((value, index) => (
-            <li key={index}>{value}</li>
+            <table key={index}><tr><td><img className={styles.profileImg} src="https://media.istockphoto.com/id/1322220448/photo/abstract-digital-futuristic-eye.jpg?s=612x612&w=0&k=20&c=oAMmGJxyTTNW0XcttULhkp5IxfW9ZTaoVdVwI2KwK5s=" alt="pho" height="40px" width="40px"/></td><td><tr><td>{localStorage.getItem("username")}</td></tr><tr><td>{value}</td></tr></td></tr></table>
           ))}
-          <hr />
+        </div>
+          <div className={styles.commentsInput}>
           <input
             placeholder="Add a comment"
+            className={styles.commInp}
             value={newComment}
             onChange={(e) => setNewComment(e.target.value)}
           ></input>
-          <button onClick={handleComments}>Post</button>
-          <hr />
+          <button className={styles.postBtn} onClick={handleComments}>Post</button>
+          </div>
         </div>
       )}
     </div>
