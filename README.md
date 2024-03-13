@@ -19,7 +19,7 @@ Techispot is a community-driven platform for engineers, where they can connect, 
 
 - **Secured authentication**: Sign in for verifying users and allowing them to use several features like comments, likes, etc.
 ## post data
-postdata = [
+``` postdata = [
     {
         userProfile: {
             userName: 'TechiSpot',
@@ -75,7 +75,7 @@ postdata = [
             }
         ]
     },
-
+```
 ## Installation
 
 Follow these steps to run Techispot on your local machine:
