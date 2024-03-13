@@ -9,6 +9,12 @@
   top: 20;
   padding-bottom: 20vh;
 }
+.userName{
+  position: absolute;
+  text-decoration: none;
+  color: white;
+  margin-left: 3.5vw;
+}
 .blank{
   width:100vw;
   height: 90vh;
@@ -88,7 +94,10 @@
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s;
-  margin-left: 25vw;
+  margin-left: 23vw;
+  margin-bottom: 3px;
+  border-radius: 50px 50px;
+
 }
 
 .followButton:hover {

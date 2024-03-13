@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import styles from './Signup.module.css';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-
+import { saveUser } from '../../users/UsersData';
 export default function Signup() {
     const [next,setNext]=useState(false);
     const navigate=useNavigate();
@@ -39,6 +39,7 @@ export default function Signup() {
             localStorage.setItem("email",data.email);
             localStorage.setItem("pass",data.pass);
             localStorage.setItem("cpass",data.cpass);
+            saveUser(data);
             navigate('/');
         }
         else{

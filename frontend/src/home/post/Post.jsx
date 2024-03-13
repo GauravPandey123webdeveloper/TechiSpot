@@ -5,7 +5,7 @@ import { postdata } from "./Posts";
 import CloseIcon from "@mui/icons-material/Close";
 import EmojiPickerComponent from "./EmojiPickerComponent";
 import Upload from "./Upload";
-
+import { Link } from "react-router-dom";
 export default function Post() {
   const [isCreatingPost, setIsCreatingPost] = useState(false);
   const [isFollowing, setIsFollowing] = useState(false);
@@ -109,24 +109,28 @@ export default function Post() {
           </label>
         </div>
         <hr />
+       
         {postdata.map((data, idx) => (
           <div className={styles.userpost} key={idx}>
             <div className={styles.userProfile}>
-              <div>
+              <Link to={`/profile/${data.userProfile.userName}`}>
                 <img
                   src={data.userProfile.userImage}
                   alt={data.userProfile.alt}
                   className={styles.profilePic}
                 />
+              </Link>
+              <Link to={`/profile/${data.userProfile.userName}`} className={styles.userName}>
                 <span>{data.userProfile.userName}</span>
-              </div>
+               </Link>
+
               <button
                 className={`${styles.followButton} ${
                   isFollowing ? styles.whenclick1 : ""
                 }`}
                 onClick={handleFollowToggle}
               >
-                {isFollowing ? "Following" : "Follow +"}
+                {isFollowing ? "Following" : "Follow"}
               </button>
             </div>
             <div className={styles.userpostdata}>
