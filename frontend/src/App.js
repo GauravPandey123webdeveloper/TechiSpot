@@ -10,6 +10,8 @@ import Error from "./error/Error";
 import BasicReact from "./projects/ReactProjects/BasicReact";
 import IntermediateReact from "./projects/ReactProjects/IntermediateReact";
 import AdvancedReact from "./projects/ReactProjects/AdvancedReact";
+
+import MyProfile from "./users/MyProfile";
 function App() {
   return (
     <>
@@ -25,6 +27,7 @@ function App() {
         <Route path="/projects/react/basic" element={<BasicReact/>}/>
         <Route path="/projects/react/intermediate" element={<IntermediateReact/>}/>
         <Route path="/projects/react/advanced" element={<AdvancedReact/>}/>
+        <Route path="/profile/:username" element = {<MyProfile/>} />
       </Routes>
     </>
   );
