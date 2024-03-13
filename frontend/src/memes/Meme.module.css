@@ -1,0 +1,219 @@
+.post {
+    width: 51vw;
+    box-shadow: 0px 0px 10px;
+    height: 100vh;
+    padding: 1vh;
+    margin-left: 24vw;
+    overflow: auto;
+    position: fixed;
+    top: 20;
+    padding-bottom: 20vh;
+    margin-top:5%;
+  }
+  .reactions > * {
+    margin-right: 10px;
+  }
+  
+  .likeContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .likeCount {
+    margin-left: 5px;
+  }
+  
+  
+  .reactions {
+    box-shadow: 0px 0px 5px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .App{
+    box-shadow: 0px 0px 5px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 1vh; 
+  }
+  .pstimg {
+    box-shadow: 0px 0px 2px;
+    width: 100%;
+  }
+  .userpost {
+    padding: 1vw;
+  }
+  .usrprofile{
+    width: 99%;
+  }
+  
+  .userProfile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .profilePic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .username {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .discription {
+    color: #657786;
+    margin-bottom: 16px;
+  }
+  
+  .followButton {
+    background-color: #1f2122;
+    color: #fff;
+    border: none;
+    padding: 3px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 25vw;
+  }
+  
+  .followButton:hover {
+    background-color: #8c98a4;
+  }
+  
+  .userDP {
+    border-radius: 100px;
+    width: 60px;
+    padding: 2px;
+  }
+  
+  .Input {
+    width: 40vw;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    outline: none;
+    margin-left: 1vw;
+  }
+  
+  .Postbtn {
+    font-size: 1.2rem;
+    background-color: #1da1f2; 
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    border-radius: 10px;
+    padding: 0 1.5vw;
+  }
+  
+  .Postbtn:hover {
+    background-color: #0d8ecf; 
+  }
+  
+  .whenclick {
+    color: #eb1717;
+  }
+  
+  .whenclick1 {
+    background-color: #eb1717;
+  }
+  
+  
+  .emojis {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  .emojis:hover{
+    cursor: pointer;
+  }
+  .popup {
+    position: fixed;
+    top: 39%;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    z-index: 9999; 
+    width: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.352);
+    background-color: rgb(9, 9, 9);
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+  }
+  .popHeader{
+    display: flex;
+    margin: 10px;
+    color: #1da1f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .poptitle{
+    width: 95%;
+    text-align: center;
+  }
+  .popup textarea {
+    width: 100%;
+    height: 30vh;
+    margin-bottom: 10px;
+    background : transparent;
+    color: rgb(240, 236, 236);
+    font-size: 1.2rem;
+    
+  }
+  
+  .popup button {
+    border-radius: 10px;
+    margin-right: 10px;
+    background-color: #1da1f2;
+  }
+  
+  @media screen and (max-width:600px){
+    .post {
+      width: 98vw;
+      margin-left: 0;
+      margin-top: 7.1vh;
+      margin-left: 4px;
+    }
+    .popup {
+      width: 100%;
+    }
+    .Input{
+      width: 71vw;
+    }
+    
+  }
+  .iconButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 26px;
+    color: #f2eeee;
+  }
+  .whenclick {
+    color: #0d8ecf;
+  
+  }
+  .whenclick1 {
+    background-color: #0d8ecf;
+  
+  }
+  .count{
+    margin-right: 15px;
+  
+  }
+  .post::-webkit-scrollbar{
+    display: none;
+  }
