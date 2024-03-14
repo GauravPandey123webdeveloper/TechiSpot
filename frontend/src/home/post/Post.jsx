@@ -8,6 +8,7 @@ import Upload from "./Upload";
 import { Link } from "react-router-dom";
 
 export default function Post() {
+  // State for managing post creation
   const [isCreatingPost, setIsCreatingPost] = useState(false);
   const [isFollowing, setIsFollowing] = useState(false);
   const [newPostText, setNewPostText] = useState("");
@@ -18,15 +19,18 @@ export default function Post() {
   const [video, setVideo] = useState("");
   const [file, setFile] = useState("");
 
+  // Function to toggle follow status
   const handleFollowToggle = () => {
     setIsFollowing((prevState) => !prevState);
   };
 
+  // Function to handle click on creating a new post
   const handlePostClick = (e) => {
     e.stopPropagation();
     setIsCreatingPost(true);
   };
 
+  // Function to close the new post creation section
   const handlePostClose = () => {
     setIsCreatingPost(false);
     setNewPostText("");
@@ -38,6 +42,7 @@ export default function Post() {
     }
   };
 
+  // Function to handle click on emoji button
   const handleEmojiClick = () => {
     if (isCreatingPost === true) {
       setIsEmojiPickerVisible(!isEmojiPickerVisible);
@@ -47,6 +52,7 @@ export default function Post() {
     }
   };
 
+  // Function to handle click on upload button
   const handleUpload = () => {
     if (isCreatingPost === true) {
       setIsUploadVisible(!isUploadVisible);
@@ -56,36 +62,46 @@ export default function Post() {
     }
   };
 
+  // Function to handle image upload
   const handleImageUpload = (type, upload) => {
     setFile(upload);
-    if(type.startsWith("image")){
+    if (type.startsWith("image")) {
       setImage(upload);
       setVideo("");
-    }
-    else{
+    } else {
       setVideo(upload);
       setImage("");
     }
     setIsUploadVisible(false);
   };
 
+  // Function to handle emoji selection
   const handleEmojiSelection = (emoji) => {
     setNewPostText((prevText) => prevText + emoji);
   };
 
+  // Function to create a new post
   const handlePostCreation = () => {
-    if (newPostText.trim() !== "") {
-      // console.log(newPostText)
+    let mediaURLimg;
+    let mediaURLvid;
+    if (video === "") {
+      mediaURLimg = image;
+    } else if (image === "") {
+      mediaURLvid = video;
+    }
+    if (newPostText.trim() !== "" || mediaURLimg || mediaURLvid) {
       const newPost = {
         userProfile: {
-          userImage: 'https://i.pinimg.com/474x/bd/26/b7/bd26b704fca0c5e3fe68f10322bf65c0.jpg',
+          userImage:
+            "https://i.pinimg.com/474x/bd/26/b7/bd26b704fca0c5e3fe68f10322bf65c0.jpg",
           alt: "User Alt",
           userName: localStorage.getItem("username"),
         },
         userPost: {
           discription: newPostText,
-          postImage:'https://media.licdn.com/dms/image/D4D12AQG56UPUtPJj0w/article-cover_image-shrink_600_2000/0/1669373321238?e=2147483647&v=beta&t=uUMorY6yjVASSX_Iy-VNu8eXkAMfkmY97PWk7zDKR0w',
-          alt: "Post Alt",
+          postImage: mediaURLimg,
+          postVideo: mediaURLvid,
+          alt: "post",
         },
       };
       if (isEmojiPickerVisible === true) {
@@ -95,19 +111,18 @@ export default function Post() {
         setIsUploadVisible(false);
       }
       postdata.unshift(newPost);
-      // setPosts([newPost, ...posts]);
-      // console.log("postdata after pushing new post:", postdata);
-
-      // localStorage.setItem("postdata", JSON.stringify(postdata));
-      // console.log("postdata in localStorage:", localStorage.getItem("postdata"));
       setNewPostText("");
+      setImage("");
+      setVideo("");
+      setFile("");
       setIsCreatingPost(false);
+      setPosts([...posts], postdata);
     }
   };
 
   return (
     <>
-      {/*User post creation section */}
+      {/* User post creation section */}
       {isCreatingPost && <div className={styles.blank}></div>}
       <div className={styles.post}>
         <div className={styles.newPost}>
@@ -116,7 +131,7 @@ export default function Post() {
             alt="user"
             className={styles.userDP}
           />
-          {/*New post creation input box */}
+          {/* New post creation input box */}
           <label htmlFor="userpost">
             <input
               type="text"
@@ -130,6 +145,7 @@ export default function Post() {
         </div>
         <hr />
 
+        {/* Mapping through existing posts */}
         {postdata.map((data, idx) => (
           <div className={styles.userpost} key={idx}>
             <div className={styles.userProfile}>
@@ -158,19 +174,30 @@ export default function Post() {
             </div>
             <div className={styles.userpostdata}>
               <p className={styles.discription}>{data.userPost.discription}</p>
-              <img
-                src={data.userPost.postImage}
-                alt={data.userPost.alt}
-                className={styles.pstimg}
-              />
-              {/*PostButtons for handling all the activites user wants to perform on a published post.
-              Ex : Like, Share the post , Comment on the Post */}
+
+              {data.userPost.postImage && (
+                <img
+                  src={data.userPost.postImage}
+                  alt={data.userPost.alt}
+                  className={styles.pstimg}
+                />
+              )}
+              {data.userPost.postVideo && (
+                <video
+                  src={data.userPost.postVideo}
+                  alt={data.userPost.alt}
+                  className={styles.pstimg}
+                  controls
+                />
+              )}
+              {/* PostButtons for handling all the activities user wants to perform on a published post.
+              Ex: Like, Share the post, Comment on the Post */}
               <PostButtons />
             </div>
           </div>
         ))}
       </div>
-      {/* When user want to create an new post and clicks on "Create New Post Section" */}
+      {/* When user wants to create a new post and clicks on "Create New Post Section" */}
       {isCreatingPost && (
         <div className={styles.popup}>
           <div className={styles.popHeader}>
@@ -180,15 +207,25 @@ export default function Post() {
             </button>
           </div>
           <div>
-          <textarea
-            placeholder="What do you want to talk about ?"
-            value={newPostText}
-            onChange={(e) => setNewPostText(e.target.value)}
-          />
-          {image === "" ? (video === "" ? "" : <video src={video} controls alt="Uploaded Video" />) : <img src={image} alt="Uploaded Pic" />}
-
+            {/* Text area for post content */}
+            <textarea
+              placeholder="What do you want to talk about ?"
+              value={newPostText}
+              onChange={(e) => setNewPostText(e.target.value)}
+            />
+            {/* Display uploaded image or video */}
+            {image === "" ? (
+              video === "" ? (
+                ""
+              ) : (
+                <video src={video} controls alt="Uploaded Video" className={styles.postimgvid}/>
+              )
+            ) : (
+              <img src={image} alt="Uploaded Pic" className={styles.postimgvid}/>
+            )}
           </div>
           <hr />
+          {/* Icons for uploading media, adding emoji, and posting */}
           <div className={styles.emojis}>
             <i className="fa-regular fa-image" onClick={handleUpload}></i>
             <i
@@ -203,11 +240,11 @@ export default function Post() {
           <hr />
         </div>
       )}
-      {/*When either user directly clicks on emoji button (or click on the emoji button when inside of create post section) to open emoji tray*/}
+      {/* When either the user directly clicks on the emoji button (or clicks on the emoji button when inside of the create post section) to open the emoji tray */}
       {isEmojiPickerVisible && (
         <EmojiPickerComponent onSelect={handleEmojiSelection} />
       )}
-      {/*When User want to upload something with their post */}
+      {/* When the user wants to upload something with their post */}
       {isUploadVisible && (
         <div className={styles.popup}>
           <div className={styles.popHeader}>
@@ -216,6 +253,7 @@ export default function Post() {
               <CloseIcon />
             </button>
           </div>
+          {/* Component for handling file upload */}
           <Upload handleImageUpload={handleImageUpload} />
         </div>
       )}
