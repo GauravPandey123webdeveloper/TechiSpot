@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import styles from "./Post.module.css";
-import PostButtons from './PostButtons'
+import PostButtons from "./PostButtons";
 import { postdata } from "./Posts";
 import CloseIcon from "@mui/icons-material/Close";
 import EmojiPickerComponent from "./EmojiPickerComponent";
 import Upload from "./Upload";
 import { Link } from "react-router-dom";
+
 export default function Post() {
   const [isCreatingPost, setIsCreatingPost] = useState(false);
   const [isFollowing, setIsFollowing] = useState(false);
@@ -13,6 +14,9 @@ export default function Post() {
   const [posts, setPosts] = useState(postdata);
   const [isEmojiPickerVisible, setIsEmojiPickerVisible] = useState(false);
   const [isUploadVisible, setIsUploadVisible] = useState(false);
+  const [image, setImage] = useState("");
+  const [video, setVideo] = useState("");
+  const [file, setFile] = useState("");
 
   const handleFollowToggle = () => {
     setIsFollowing((prevState) => !prevState);
@@ -34,15 +38,10 @@ export default function Post() {
     }
   };
 
-  const handleUploadClose = () => {
-    setIsUploadVisible(false);
-  };
-
   const handleEmojiClick = () => {
     if (isCreatingPost === true) {
       setIsEmojiPickerVisible(!isEmojiPickerVisible);
-    }
-    else {
+    } else {
       setIsCreatingPost(!isCreatingPost);
       setIsEmojiPickerVisible(!isEmojiPickerVisible);
     }
@@ -55,6 +54,19 @@ export default function Post() {
       setIsCreatingPost(!isCreatingPost);
       setIsUploadVisible(!isUploadVisible);
     }
+  };
+
+  const handleImageUpload = (type, upload) => {
+    setFile(upload);
+    if(type.startsWith("image")){
+      setImage(upload);
+      setVideo("");
+    }
+    else{
+      setVideo(upload);
+      setImage("");
+    }
+    setIsUploadVisible(false);
   };
 
   const handleEmojiSelection = (emoji) => {
@@ -112,7 +124,7 @@ export default function Post() {
         </div>
         <hr />
 
-        {postdata.map((data, idx) => (
+        {posts.map((data, idx) => (
           <div className={styles.userpost} key={idx}>
             <div className={styles.userProfile}>
               <Link to={`/profile/${data.userProfile.userName}`}>
@@ -122,9 +134,12 @@ export default function Post() {
                   className={styles.profilePic}
                 />
               </Link>
-              <Link to={`/profile/${data.userProfile.userName}`} className={styles.userName}>
+              <Link
+                to={`/profile/${data.userProfile.userName}`}
+                className={styles.userName}
+              >
                 <span>{data.userProfile.userName}</span>
-               </Link>
+              </Link>
 
               <button
                 className={`${styles.followButton} ${
@@ -158,11 +173,15 @@ export default function Post() {
               <CloseIcon />
             </button>
           </div>
+          <div>
           <textarea
-            placeholder="   What's going on!"
+            placeholder="What do you want to talk about ?"
             value={newPostText}
             onChange={(e) => setNewPostText(e.target.value)}
           />
+          {image === "" ? (video === "" ? "" : <video src={video} controls alt="Uploaded Video" />) : <img src={image} alt="Uploaded Pic" />}
+
+          </div>
           <hr />
           <div className={styles.emojis}>
             <i className="fa-regular fa-image" onClick={handleUpload}></i>
@@ -187,11 +206,11 @@ export default function Post() {
         <div className={styles.popup}>
           <div className={styles.popHeader}>
             <h3 className={styles.poptitle}>Upload</h3>
-            <button onClick={handleUploadClose}>
+            <button onClick={() => setIsUploadVisible(false)}>
               <CloseIcon />
             </button>
           </div>
-          <Upload />
+          <Upload handleImageUpload={handleImageUpload} />
         </div>
       )}
     </>
