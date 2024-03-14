@@ -75,15 +75,16 @@ export default function Post() {
 
   const handlePostCreation = () => {
     if (newPostText.trim() !== "") {
+      // console.log(newPostText)
       const newPost = {
         userProfile: {
-          userImage: "URL_TO_USER_IMAGE",
+          userImage: 'https://i.pinimg.com/474x/bd/26/b7/bd26b704fca0c5e3fe68f10322bf65c0.jpg',
           alt: "User Alt",
-          userName: "New User",
+          userName: localStorage.getItem("username"),
         },
         userPost: {
           discription: newPostText,
-          postImage: "URL_TO_POST_IMAGE",
+          postImage:'https://media.licdn.com/dms/image/D4D12AQG56UPUtPJj0w/article-cover_image-shrink_600_2000/0/1669373321238?e=2147483647&v=beta&t=uUMorY6yjVASSX_Iy-VNu8eXkAMfkmY97PWk7zDKR0w',
           alt: "Post Alt",
         },
       };
@@ -93,7 +94,12 @@ export default function Post() {
       if (isUploadVisible === true) {
         setIsUploadVisible(false);
       }
-      setPosts((prevPosts) => [newPost, ...prevPosts]);
+      postdata.unshift(newPost);
+      // setPosts([newPost, ...posts]);
+      // console.log("postdata after pushing new post:", postdata);
+
+      // localStorage.setItem("postdata", JSON.stringify(postdata));
+      // console.log("postdata in localStorage:", localStorage.getItem("postdata"));
       setNewPostText("");
       setIsCreatingPost(false);
     }
@@ -124,7 +130,7 @@ export default function Post() {
         </div>
         <hr />
 
-        {posts.map((data, idx) => (
+        {postdata.map((data, idx) => (
           <div className={styles.userpost} key={idx}>
             <div className={styles.userProfile}>
               <Link to={`/profile/${data.userProfile.userName}`}>
