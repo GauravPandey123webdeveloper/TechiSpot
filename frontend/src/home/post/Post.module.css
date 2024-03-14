@@ -9,16 +9,16 @@
   top: 20;
   padding-bottom: 20vh;
 }
-.userName{
+.userName {
   position: absolute;
   text-decoration: none;
   color: white;
   margin-left: 3.5vw;
 }
-.blank{
-  width:100vw;
+.blank {
+  width: 100vw;
   height: 90vh;
-  background-color:#1da0f228 ;
+  background-color: #1da0f228;
   z-index: 7000;
   position: fixed;
 }
@@ -35,7 +35,6 @@
   margin-left: 5px;
 }
 
-
 .reactions {
   box-shadow: 0px 0px 5px;
   font-size: 2rem;
@@ -43,12 +42,12 @@
   justify-content: space-around;
   align-items: center;
 }
-.App{
+.App {
   box-shadow: 0px 0px 5px;
   font-size: 2rem;
   display: flex;
   justify-content: space-around;
-  padding: 1vh; 
+  padding: 1vh;
 }
 .pstimg {
   box-shadow: 0px 0px 2px;
@@ -57,7 +56,7 @@
 .userpost {
   padding: 1vw;
 }
-.usrprofile{
+.usrprofile {
   width: 99%;
 }
 
@@ -97,9 +96,10 @@
   margin-left: 23vw;
   margin-bottom: 3px;
   border-radius: 50px 50px;
-
 }
-
+.postimgvid {
+  width: 46vw;
+}
 .followButton:hover {
   background-color: #8c98a4;
 }
@@ -122,17 +122,17 @@
 
 .Postbtn {
   font-size: 1.2rem;
-  background-color: #1da1f2; 
+  background-color: #1da1f2;
   color: #fff;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease; 
+  transition: background-color 0.3s ease;
   border-radius: 10px;
   padding: 0 1.5vw;
 }
 
 .Postbtn:hover {
-  background-color: #0d8ecf; 
+  background-color: #0d8ecf;
 }
 
 .whenclick {
@@ -143,13 +143,12 @@
   background-color: #eb1717;
 }
 
-
 .emojis {
   font-size: 1.5rem;
   display: flex;
   justify-content: space-around;
 }
-.emojis:hover{
+.emojis:hover {
   cursor: pointer;
 }
 .popup {
@@ -160,14 +159,14 @@
   transform: translate(-50%, -50%);
   overflow: auto;
   padding: 20px;
-  z-index: 9999; 
+  z-index: 9999;
   width: 50%;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.352);
   background-color: rgb(9, 9, 9);
   border-bottom-left-radius: 6%;
   border-bottom-right-radius: 6%;
 }
-.popHeader{
+.popHeader {
   display: flex;
   margin: 10px;
   color: #1da1f2;
@@ -175,7 +174,7 @@
   justify-content: center;
   align-items: center;
 }
-.poptitle{
+.poptitle {
   width: 95%;
   text-align: center;
 }
@@ -183,10 +182,9 @@
   width: 100%;
   height: 20vh;
   margin-bottom: 10px;
-  background : transparent;
+  background: transparent;
   color: rgb(240, 236, 236);
   font-size: 1.2rem;
-  
 }
 
 .popup button {
@@ -198,7 +196,7 @@
   font-weight: 900;
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width: 600px) {
   .post {
     width: 98vw;
     margin-left: 0;
@@ -208,10 +206,9 @@
   .popup {
     width: 100%;
   }
-  .Input{
+  .Input {
     width: 71vw;
   }
-  
 }
 .iconButton {
   background-color: transparent;
@@ -223,25 +220,22 @@
 }
 .whenclick {
   color: #0d8ecf;
-
 }
 .whenclick1 {
   background-color: #0d8ecf;
-
 }
-.count{
+.count {
   margin-right: 15px;
-
 }
-.post::-webkit-scrollbar{
+.post::-webkit-scrollbar {
   display: none;
 }
-.commentsInput{
+.commentsInput {
   position: fixed;
   height: 10vh;
   top: 63.9%;
   left: 24.5%;
-  z-index: 9999; 
+  z-index: 9999;
   width: 50%;
   /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.352); */
   background-color: rgb(29, 29, 29);
@@ -249,22 +243,22 @@
   border-bottom-right-radius: 10px;
   border: none;
 }
-.commInp{
+.commInp {
   margin-top: 1.5vh;
   margin-left: 1vw;
   width: 40.5vw;
   margin-right: 1vw;
   border-radius: 10px;
 }
-.postBtn{
+.postBtn {
   border-radius: 10px;
   width: 6.5vw;
 }
-table{
+table {
   font-size: 15px;
   margin-bottom: 15px;
 }
-.profileImg{
+.profileImg {
   border-radius: 100%;
   margin-right: 10px;
 }
