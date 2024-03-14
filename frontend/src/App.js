@@ -28,6 +28,7 @@ function App() {
         <Route path="/projects/react/intermediate" element={<IntermediateReact/>}/>
         <Route path="/projects/react/advanced" element={<AdvancedReact/>}/>
         <Route path="/profile/:username" element = {<MyProfile/>} />
+        <Route path="/profile/TechiSpot/" element={<MyProfile/>}/>
       </Routes>
     </>
   );

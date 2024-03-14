@@ -6,6 +6,8 @@ import CloseIcon from "@mui/icons-material/Close";
 import EmojiPickerComponent from "./EmojiPickerComponent";
 import Upload from "./Upload";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 export default function Post() {
   const [isCreatingPost, setIsCreatingPost] = useState(false);
   const [isFollowing, setIsFollowing] = useState(false);
@@ -13,6 +15,7 @@ export default function Post() {
   const [posts, setPosts] = useState(postdata);
   const [isEmojiPickerVisible, setIsEmojiPickerVisible] = useState(false);
   const [isUploadVisible, setIsUploadVisible] = useState(false);
+  const navigate = useNavigate();
 
   const handleFollowToggle = () => {
     setIsFollowing((prevState) => !prevState);
@@ -41,8 +44,7 @@ export default function Post() {
   const handleEmojiClick = () => {
     if (isCreatingPost === true) {
       setIsEmojiPickerVisible(!isEmojiPickerVisible);
-    }
-    else {
+    } else {
       setIsCreatingPost(!isCreatingPost);
       setIsEmojiPickerVisible(!isEmojiPickerVisible);
     }
@@ -63,7 +65,6 @@ export default function Post() {
 
   const handlePostCreation = () => {
     if (newPostText.trim() !== "") {
-      // console.log(newPostText)
       const newPost = {
         userProfile: {
           userImage: 'https://i.pinimg.com/474x/bd/26/b7/bd26b704fca0c5e3fe68f10322bf65c0.jpg',
@@ -83,19 +84,17 @@ export default function Post() {
         setIsUploadVisible(false);
       }
       postdata.unshift(newPost);
-      // setPosts([newPost, ...posts]);
-      // console.log("postdata after pushing new post:", postdata);
-
-      // localStorage.setItem("postdata", JSON.stringify(postdata));
-      // console.log("postdata in localStorage:", localStorage.getItem("postdata"));
       setNewPostText("");
       setIsCreatingPost(false);
     }
   };
 
+  function dphandle() {
+    navigate("/profile/TechiSpot");
+  }
+
   return (
     <>
-      {/*User post creation section */}
       {isCreatingPost && <div className={styles.blank}></div>}
       <div className={styles.post}>
         <div className={styles.newPost}>
@@ -103,8 +102,8 @@ export default function Post() {
             src="https://i.pinimg.com/564x/ac/18/49/ac18498ee93158817a026a82e8655fa7.jpg"
             alt="user"
             className={styles.userDP}
+            onClick={dphandle}
           />
-          {/*New post creation input box */}
           <label htmlFor="userpost">
             <input
               type="text"
@@ -130,7 +129,7 @@ export default function Post() {
               </Link>
               <Link to={`/profile/${data.userProfile.userName}`} className={styles.userName}>
                 <span>{data.userProfile.userName}</span>
-               </Link>
+              </Link>
 
               <button
                 className={`${styles.followButton} ${
@@ -148,14 +147,12 @@ export default function Post() {
                 alt={data.userPost.alt}
                 className={styles.pstimg}
               />
-              {/*PostButtons for handling all the activites user wants to perform on a published post.
-              Ex : Like, Share the post , Comment on the Post */}
               <PostButtons />
             </div>
           </div>
         ))}
       </div>
-      {/* When user want to create an new post and clicks on "Create New Post Section" */}
+
       {isCreatingPost && (
         <div className={styles.popup}>
           <div className={styles.popHeader}>
@@ -184,11 +181,11 @@ export default function Post() {
           <hr />
         </div>
       )}
-      {/*When either user directly clicks on emoji button (or click on the emoji button when inside of create post section) to open emoji tray*/}
+
       {isEmojiPickerVisible && (
         <EmojiPickerComponent onSelect={handleEmojiSelection} />
       )}
-      {/*When User want to upload something with their post */}
+
       {isUploadVisible && (
         <div className={styles.popup}>
           <div className={styles.popHeader}>
