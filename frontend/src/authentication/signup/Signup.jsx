@@ -3,7 +3,10 @@ import styles from './Signup.module.css';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { saveUser } from '../../users/UsersData';
+import { useRecoilState } from 'recoil';
+import { UserAtom } from '../../userAtom/UserAtom';
 export default function Signup() {
+    const [userData,setuserData]=useRecoilState(UserAtom);
     const [next,setNext]=useState(false);
     const navigate=useNavigate();
     const [data,setData]=useState({
@@ -40,6 +43,7 @@ export default function Signup() {
             localStorage.setItem("pass",data.pass);
             localStorage.setItem("cpass",data.cpass);
             saveUser(data);
+            setuserData([...userData,data]);
             navigate('/');
         }
         else{
