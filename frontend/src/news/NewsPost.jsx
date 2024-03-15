@@ -69,13 +69,6 @@ export default function Post() {
         </label>
       </div>
       <hr />
-          <div className={styles.emojis}>
-            <i onClick={handlePostClick} className="fa-regular fa-image"></i>
-            <i onClick={handleEmojiClick} className="fa-regular fa-face-smile"></i>
-            <i className="fa-regular fa-calendar-days"></i>
-            <button className={styles.Postbtn} onClick={handlePostClick}>Post</button>
-          </div>
-          <hr />
      
       {postdata.map((data, idx) => (
         <div className={styles.userpost} key={idx}>

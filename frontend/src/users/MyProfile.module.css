@@ -1,0 +1,33 @@
+
+.gradient-custom-2 {
+    background-color: #000;
+  }
+  
+  .rounded-top {
+    background-color: #135;
+  }
+  
+  .ms-4 {
+    margin-bottom:-10vh ;
+    width: 230px;
+  }
+  .img-thumbnail {
+    width: 60vw;
+    z-index: 1;
+    border-radius: 150px;
+  }
+  
+  .editbtn{
+    height: 36px;
+    overflow: visible;
+    background-color: transparent;
+    color: #000;
+  }
+
+  .ms-3 {
+    margin-top: 130px;
+  }
+  
+.p{
+    margin-top: 120px;
+}
