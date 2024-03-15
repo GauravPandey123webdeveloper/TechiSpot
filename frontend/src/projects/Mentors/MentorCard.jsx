@@ -9,7 +9,10 @@ export default function MentorCard() {
         <h4>{member.name}</h4>
         <p>{member.about}</p>
         <div className={styles.socialLinks}>
-        <button className={styles.btn}>Book Now</button>
+        <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
+        <button className={styles.btn}>Connect</button>
+          </a>
+        
         </div>
       </div>
     </div>
