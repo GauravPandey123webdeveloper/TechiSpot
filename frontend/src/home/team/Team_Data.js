@@ -36,6 +36,13 @@ let data = [
     git: "https://github.com/SaurabhSPKY",
   },
   {
+    name: "Bhudeo Krit",
+    pro: "./Team_Profile_Pic/Bhudeo_Krit.jpeg",
+    about: "Front End Developer",
+    linkedin: "https://www.linkedin.com/in/bhudeo-krit-5aa154292/",
+    git: "https://github.com/SnowFlowerr",
+  },
+  {
     name: "Ashish Dhamane",
     pro: "./Team_Profile_Pic/Ashish.jpeg",
     about: "Front End Developer",
@@ -43,11 +50,39 @@ let data = [
     git: "https://github.com/ASHISHBVB",
   },
   {
+    name: "Aditya Kumar Tiwari",
+    pro: "./Team_Profile_Pic/Aditya_Kumar_Tiwari.jpeg",
+    about: "Front End Developer",
+    linkedin: "https://www.linkedin.com/in/aditya-kumar-tiwari-473ab9216/",
+    git: "https://github.com/Aditya3425-Fst",
+  },
+  {
+    name: "Vivesh Kumar",
+    pro: "./Team_Profile_Pic/Vivesh_Kumar.jpg",
+    about: "Front End Developer",
+    linkedin: "https://www.linkedin.com/in/vivesh-kumar-408589290/",
+    git: "https://github.com/Vivesh2911",
+  },
+  {
     name: "Prateek Choudhary",
     pro: "./Team_Profile_Pic/Prateek_Choudhary.jpeg",
     about: "Front End Developer",
     linkedin: "https://www.linkedin.com/in/prateek-choudhary-317422292/",
     git: "https://github.com/Prateek-Fst",
+  },
+  {
+    name: "Md Azmir",
+    pro: "./Team_Profile_Pic/Md_Azmir.jpeg",
+    about: "Front End Developer",
+    linkedin: "https://www.linkedin.com/in/md-azmir-1248092a8/",
+    git: "https://github.com/Md-Azmir",
+  },
+  {
+    name: "Ravi Ranjan",
+    pro: "./Team_Profile_Pic/Ravi_Ranjan.jpeg",
+    about: "Front End Developer",
+    linkedin: "https://www.linkedin.com/in/ravi-ranjan-768007237/",
+    git: "https://github.com/Ravi29102004r",
   },
   {
     name: "Anupama Choudhary",
@@ -77,7 +112,7 @@ let data = [
     linkedin: "https://www.linkedin.com/in/purnima-baroi-0882072aa/",
     git: "https://github.com/purniiiima",
   },
-  
+
   {
     name: "Priyansh Kandwal",
     pro: "./Team_Profile_Pic/Priyansh.jpeg",
@@ -93,8 +128,6 @@ let data = [
     git: "https://github.com/AyushSrivastava0609",
   },
   {
-
-    
     name: "Aryan Lamba",
     pro: "./Team_Profile_Pic/Aryan_Lamba.jpg",
     about: "Front End Developer",
@@ -150,9 +183,9 @@ let data = [
     about: "Front End Developer",
     linkedin: "https://www.linkedin.com/in/manas-raj-a34125293/",
     git: "https://github.com/allAboutManas",
-
-  },{
-  name: "Nikhil Raghuwanshi",
+  },
+  {
+    name: "Nikhil Raghuwanshi",
     pro: "./Team_Profile_Pic/Nikhil_Raghuwanshi.jpeg",
     about: "Front End Developer",
     linkedin: "https://www.linkedin.com/in/nikhilraghuwanshi/",
@@ -185,6 +218,6 @@ let data = [
     about: "Front End Developer",
     linkedin: "https://www.linkedin.com/in/avanish-yadav-089156292/",
     git: "https://github.com/Avanishyadav8175/",
-  }
+  },
 ];
 export default data;
