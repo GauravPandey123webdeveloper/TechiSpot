@@ -9,7 +9,7 @@ export default function NoteBar() {
           <i className="fa-solid fa-list"></i>Menu
         </li>
         <li className={styles.courseItem}>
-          <Link to="/notes">
+          <Link to="/projects/Html/basic">
             {" "}
             <i class="fa-brands fa-html5"></i>HTML
           </Link>
