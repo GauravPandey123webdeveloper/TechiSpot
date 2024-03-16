@@ -2,6 +2,11 @@ import React, { useState, useEffect, useRef } from "react";
 import styles from "./Post.module.css";
 import Heart from "react-animated-heart";
 import { useCopyToClipboard } from "usehooks-ts";
+
+import Button from '@mui/material/Button';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
+import PopupState, { bindTrigger, bindMenu } from 'material-ui-popup-state';
 import {
   EmailIcon,
   EmailShareButton,
@@ -92,6 +97,25 @@ export default function PostButtons() {
     containerReference.current.scrollLeft = newPosition;
   }
 
+const [content, setContent] = useState('');
+
+const handleDownload = (content) => {
+  // Example: Create a blob with content and initiate download
+  const blob = new Blob([content], { type: 'text/plain' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'post.txt';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+};
+
+const handleDelete = (setContent) => {
+  // Example: Reset content when delete button is clicked
+  setContent('');
+};
   return (
     <div className={styles.reactions}>
       <div className={styles.likeContainer}>
@@ -146,6 +170,28 @@ export default function PostButtons() {
           </div>
         </div>
       )}
+    
+
+
+  <PopupState variant="popover" popupId="demo-popup-menu">
+      {(popupState) => (
+        <>
+          <Button variant="contained" {...bindTrigger(popupState)}>
+            ...
+          </Button>
+          <Menu {...bindMenu(popupState)}>
+            <MenuItem onClick={() => { handleDownload(content); popupState.close(); }} id="download">Download</MenuItem>
+            <MenuItem onClick={() => { handleDelete(setContent); popupState.close(); }} id="delete">Delete</MenuItem>
+          </Menu>
+        </>
+      )}
+    </PopupState>
+
+
+
+
+  
+
       {/*When user clicks on the share button inside the post card */}
       {share && (
         <div onClick={handleShare} className={styles.share_overlay}>
