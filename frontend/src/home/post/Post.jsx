@@ -180,14 +180,15 @@ export default function Post() {
                 <span>{data.userProfile.userName}</span>
               </Link>
 
-              <button
+            {/* user don't need to see follow button for his post itself */}
+             { data.userProfile.userName!==localStorage.getItem("username")&&<button
                 className={`${styles.followButton} ${
                   isFollowing ? styles.whenclick1 : ""
                 }`}
                 onClick={handleFollowToggle}
               >
                 {isFollowing ? "Following" : "Follow"}
-              </button>
+              </button>}
             </div>
             <div className={styles.userpostdata}>
               <p className={styles.discription}>{data.userPost.discription}</p>
