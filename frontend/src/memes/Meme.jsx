@@ -28,12 +28,12 @@ export default function Meme() {
   const handlePostClose = () => {
     setIsCreatingPost(false);
     setNewPostText("");
-    if(isEmojiPickerVisible==true){
+    if(isEmojiPickerVisible===true){
       setIsEmojiPickerVisible(!isEmojiPickerVisible)
     }
   };
   const handleEmojiClick = () => {
-    if(isCreatingPost==true){
+    if(isCreatingPost===true){
     setIsEmojiPickerVisible(!isEmojiPickerVisible);
     }
   };
@@ -56,7 +56,7 @@ export default function Meme() {
           alt: "Post Alt",
         },
       };
-      if(isEmojiPickerVisible==true){
+      if(isEmojiPickerVisible===true){
         setIsEmojiPickerVisible(!isEmojiPickerVisible)
       }
       setPosts((prevPosts) => [newPost, ...prevPosts]);
