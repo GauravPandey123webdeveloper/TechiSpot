@@ -88,6 +88,7 @@ export default function PostButtons() {
     /*Updating the scroll position or scrolling amount (initially 0) */
     const newPosition = Math.floor(scrollAmount / 115) * 115 + amt;
     setScrollAmount(newPosition);
+    
     /* Using the variable containerReference (which stores the direct reference to conatiner of social icons) to make use of the scrollLeft property */
     containerReference.current.scrollLeft = newPosition;
   }
