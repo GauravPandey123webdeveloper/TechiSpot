@@ -192,14 +192,6 @@ export default function Post() {
             </div>
             <div className={styles.userpostdata}>
               <p className={styles.discription}>{data.userPost.discription}</p>
-
-              {/* <img
-                src={data.userPost.postImage}
-                alt={data.userPost.alt}
-                className={styles.pstimg}
-              /> */}
-
-
               {data.userPost.postImage && (
                 <img
                   src={data.userPost.postImage}
