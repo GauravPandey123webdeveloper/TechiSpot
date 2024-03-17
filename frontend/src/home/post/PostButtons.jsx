@@ -2,6 +2,11 @@ import React, { useState, useEffect, useRef } from "react";
 import styles from "./Post.module.css";
 import Heart from "react-animated-heart";
 import { useCopyToClipboard } from "usehooks-ts";
+
+import Button from '@mui/material/Button';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
+import PopupState, { bindTrigger, bindMenu } from 'material-ui-popup-state';
 import {
   EmailIcon,
   EmailShareButton,
@@ -91,6 +96,28 @@ export default function PostButtons() {
     /* Using the variable containerReference (which stores the direct reference to conatiner of social icons) to make use of the scrollLeft property */
     containerReference.current.scrollLeft = newPosition;
   }
+  
+  const[content,setContent] = useState("post");
+
+const handleDownload = (content) => {
+  try {
+    const blob = new Blob([content], { type: 'image/png' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'post.png';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  } catch (error) {
+    console.error('Error downloading file:', error);
+  }
+};
+
+const handleDelete = () => {
+  setContent('');
+};
 
   return (
     <div className={styles.reactions}>
@@ -146,6 +173,28 @@ export default function PostButtons() {
           </div>
         </div>
       )}
+    
+
+
+  <PopupState variant="popover" popupId="demo-popup-menu">
+      {(popupState) => (
+        <>
+          <Button variant="contained" {...bindTrigger(popupState)}>
+            ...
+          </Button>
+          <Menu {...bindMenu(popupState)}>
+            <MenuItem onClick={() => { handleDownload(content); popupState.close(); }} id="download">Download</MenuItem>
+            <MenuItem onClick={() => { handleDelete(setContent); popupState.close(); }} id="delete">Delete</MenuItem>
+          </Menu>
+        </>
+      )}
+    </PopupState>
+
+
+
+
+  
+
       {/*When user clicks on the share button inside the post card */}
       {share && (
         <div onClick={handleShare} className={styles.share_overlay}>
