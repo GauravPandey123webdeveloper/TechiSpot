@@ -110,7 +110,8 @@ export default function Post() {
       if (isUploadVisible === true) {
         setIsUploadVisible(false);
       }
-      postdata.unshift(newPost);
+      postdata.unshift(newPost); 
+
       setNewPostText("");
       setImage("");
       setVideo("");
@@ -119,6 +120,7 @@ export default function Post() {
       setPosts([...posts], postdata);
     }
   };
+     
 
   return (
     <>

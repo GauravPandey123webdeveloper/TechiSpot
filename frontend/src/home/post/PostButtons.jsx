@@ -96,26 +96,29 @@ export default function PostButtons() {
     /* Using the variable containerReference (which stores the direct reference to conatiner of social icons) to make use of the scrollLeft property */
     containerReference.current.scrollLeft = newPosition;
   }
-
-const [content, setContent] = useState('');
+  
+  const[content,setContent] = useState("post");
 
 const handleDownload = (content) => {
-  // Example: Create a blob with content and initiate download
-  const blob = new Blob([content], { type: 'text/plain' });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = 'post.txt';
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-  URL.revokeObjectURL(url);
+  try {
+    const blob = new Blob([content], { type: 'image/png' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'post.png';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  } catch (error) {
+    console.error('Error downloading file:', error);
+  }
 };
 
-const handleDelete = (setContent) => {
-  // Example: Reset content when delete button is clicked
+const handleDelete = () => {
   setContent('');
 };
+
   return (
     <div className={styles.reactions}>
       <div className={styles.likeContainer}>
