@@ -12,6 +12,9 @@ import IntermediateReact from "./projects/ReactProjects/IntermediateReact";
 import AdvancedReact from "./projects/ReactProjects/AdvancedReact";
 
 import MyProfile from "./users/MyProfile";
+import AdvancedHtml from "./projects/HtmlProject/AdavancedHtml";
+import IntermediateHtml from "./projects/HtmlProject/IntermediateHtml";
+import BasicHtml from "./projects/HtmlProject/BasicHtml";
 function App() {
   return (
     <>
@@ -27,6 +30,9 @@ function App() {
         <Route path="/projects/react/basic" element={<BasicReact/>}/>
         <Route path="/projects/react/intermediate" element={<IntermediateReact/>}/>
         <Route path="/projects/react/advanced" element={<AdvancedReact/>}/>
+        <Route path="/projects/Html/basic" element={<BasicHtml/>}/>
+        <Route path="/projects/Html/intermediate" element={<IntermediateHtml/>}/>
+        <Route path="/projects/Html/advanced" element={<AdvancedHtml/>}/>
         <Route path="/profile/:username" element = {<MyProfile/>} />
         <Route path="/profile/TechiSpot/" element={<MyProfile/>}/>
       </Routes>
