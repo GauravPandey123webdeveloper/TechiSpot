@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { getUsers } from './UsersData.js';
+import { useNavigate } from 'react-router-dom';
 
 import { MDBCol, MDBContainer, MDBRow, MDBCard, MDBCardText, MDBCardImage, MDBBtn, MDBTypography } from 'mdb-react-ui-kit';
 import styles from './MyProfile.module.css'; 
@@ -13,10 +14,18 @@ export default function MyProfile() {
 
     const username = usersData.length > 0 ? usersData[0].username : '';
     const email = usersData.length > 0 ? usersData[0].email : '';
+    const navigate =useNavigate();
+    function handleCross(){
+      navigate("/");
+
+    }
 
   return (
     <div className={styles['gradient-custom-2']}>
       <MDBContainer className="py-5 h-100">
+        <div className={styles.cross}>
+        <button onClick={handleCross}> <i class="fa-solid fa-xmark"></i></button>
+        </div>
         <MDBRow className="justify-content-center align-items-center h-100">
           <MDBCol lg="" xl="">
             <MDBCard>
