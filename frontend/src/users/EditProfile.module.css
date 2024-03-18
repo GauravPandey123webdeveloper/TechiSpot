@@ -1,0 +1,30 @@
+#formContainer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#formContainer form {
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 20px rgb(127, 125, 125);
+}
+
+.inputBox {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.inputBox input {
+  margin-left: 10px;
+  width: 200px;
+}
+
+#formContainer form button {
+  padding: 5px 30px;
+  border: none;
+  outline: none;
+}
