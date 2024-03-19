@@ -15,9 +15,6 @@ import MyProfile from "./users/MyProfile";
 import AdvancedHtml from "./projects/HtmlProject/AdavancedHtml";
 import IntermediateHtml from "./projects/HtmlProject/IntermediateHtml";
 import BasicHtml from "./projects/HtmlProject/BasicHtml";
-import EditProfile from "./users/EditProfile";
-
-
 function App() {
   return (
     <>
@@ -36,8 +33,8 @@ function App() {
         <Route path="/projects/Html/basic" element={<BasicHtml/>}/>
         <Route path="/projects/Html/intermediate" element={<IntermediateHtml/>}/>
         <Route path="/projects/Html/advanced" element={<AdvancedHtml/>}/>
-        <Route path="/profile/:id" element = {<MyProfile/>} />
-        <Route path="/editProfile/:id" element = {<EditProfile/>}></Route>
+        <Route path="/profile/:username" element = {<MyProfile/>} />
+        <Route path="/profile/TechiSpot/" element={<MyProfile/>}/>
       </Routes>
     </>
   );
