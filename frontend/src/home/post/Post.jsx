@@ -166,7 +166,7 @@ export default function Post() {
         {postdata.map((data, idx) => (
           <div className={styles.userpost} key={idx}>
             <div className={styles.userProfile}>
-              <Link to={`/profile/${idx}`}>
+              <Link to={`/profile/${data.userProfile.userName}`}>
                 <img
                   src={data.userProfile.userImage}
                   alt={data.userProfile.alt}
@@ -174,7 +174,7 @@ export default function Post() {
                 />
               </Link>
               <Link
-                to={`/profile/${idx}`}
+                to={`/profile/${data.userProfile.userName}`}
                 className={styles.userName}
               >
                 <span>{data.userProfile.userName}</span>
