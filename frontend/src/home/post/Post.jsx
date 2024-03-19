@@ -7,6 +7,9 @@ import EmojiPickerComponent from "./EmojiPickerComponent";
 import Upload from "./Upload";
 import { Link } from "react-router-dom";
 
+import { useNavigate } from "react-router-dom";
+
+
 export default function Post() {
   // State for managing post creation
   const [isCreatingPost, setIsCreatingPost] = useState(false);
@@ -15,9 +18,13 @@ export default function Post() {
   const [posts, setPosts] = useState(postdata);
   const [isEmojiPickerVisible, setIsEmojiPickerVisible] = useState(false);
   const [isUploadVisible, setIsUploadVisible] = useState(false);
+
+  const navigate = useNavigate();
+
   const [image, setImage] = useState("");
   const [video, setVideo] = useState("");
   const [file, setFile] = useState("");
+
 
   // Function to toggle follow status
   const handleFollowToggle = () => {
@@ -82,6 +89,7 @@ export default function Post() {
 
   // Function to create a new post
   const handlePostCreation = () => {
+
     let mediaURLimg;
     let mediaURLvid;
     if (video === "") {
@@ -110,7 +118,8 @@ export default function Post() {
       if (isUploadVisible === true) {
         setIsUploadVisible(false);
       }
-      postdata.unshift(newPost);
+      postdata.unshift(newPost); 
+
       setNewPostText("");
       setImage("");
       setVideo("");
@@ -119,9 +128,15 @@ export default function Post() {
       setPosts([...posts], postdata);
     }
   };
+     
+
+  function dphandle() {
+    navigate("/profile/TechiSpot");
+  }
 
   return (
     <>
+
       {/* User post creation section */}
       {isCreatingPost && <div className={styles.blank}></div>}
       <div className={styles.post}>
@@ -130,8 +145,10 @@ export default function Post() {
             src="https://i.pinimg.com/564x/ac/18/49/ac18498ee93158817a026a82e8655fa7.jpg"
             alt="user"
             className={styles.userDP}
+            onClick={dphandle}
           />
-          {/* New post creation input box */}
+ {/* New post creation input box */}
+
           <label htmlFor="userpost">
             <input
               type="text"
@@ -163,18 +180,18 @@ export default function Post() {
                 <span>{data.userProfile.userName}</span>
               </Link>
 
-              <button
+            {/* user don't need to see follow button for his post itself */}
+             { data.userProfile.userName!==localStorage.getItem("username")&&<button
                 className={`${styles.followButton} ${
                   isFollowing ? styles.whenclick1 : ""
                 }`}
                 onClick={handleFollowToggle}
               >
                 {isFollowing ? "Following" : "Follow"}
-              </button>
+              </button>}
             </div>
             <div className={styles.userpostdata}>
               <p className={styles.discription}>{data.userPost.discription}</p>
-
               {data.userPost.postImage && (
                 <img
                   src={data.userPost.postImage}
@@ -192,12 +209,14 @@ export default function Post() {
               )}
               {/* PostButtons for handling all the activities user wants to perform on a published post.
               Ex: Like, Share the post, Comment on the Post */}
+
               <PostButtons />
             </div>
           </div>
         ))}
       </div>
       {/* When user wants to create a new post and clicks on "Create New Post Section" */}
+
       {isCreatingPost && (
         <div className={styles.popup}>
           <div className={styles.popHeader}>
@@ -240,11 +259,13 @@ export default function Post() {
           <hr />
         </div>
       )}
+
       {/* When either the user directly clicks on the emoji button (or clicks on the emoji button when inside of the create post section) to open the emoji tray */}
       {isEmojiPickerVisible && (
         <EmojiPickerComponent onSelect={handleEmojiSelection} />
       )}
       {/* When the user wants to upload something with their post */}
+
       {isUploadVisible && (
         <div className={styles.popup}>
           <div className={styles.popHeader}>

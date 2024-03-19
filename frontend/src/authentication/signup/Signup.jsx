@@ -83,7 +83,7 @@ export default function Signup() {
                     <form onSubmit={handleNext} autocomplete="off">
                         <input className={styles.user} type="text" id='username' onChange={handleChange} placeholder='Username' required/> <br /><br />
                         <input className={styles.dob} type="date" id='dob' onChange={handleChange} placeholder='Date Of Birth' min='1990-01-01' max='2010-01-01' required/> <br /><br />
-                        <input className={styles.phone} type="text" id='phone' onChange={handleChange} placeholder='Phone Number' pattern="[0-9]{10}"  required/> <br /><br />
+                        <input className={styles.phone} type="number" id='phone' onChange={handleChange} placeholder='Phone Number' pattern="[0-9]{10}"  required/> <br /><br />
                         <div className={styles.buttnbox}>
                             <button type='submit' className={styles.buttn}>Next</button>
                         </div>
