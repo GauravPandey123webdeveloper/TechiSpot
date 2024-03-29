@@ -108,6 +108,7 @@
   border-radius: 100px;
   width: 60px;
   padding: 2px;
+  cursor: pointer;
 }
 
 .Input {

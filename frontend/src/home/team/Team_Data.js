@@ -143,7 +143,7 @@ let data = [
   },
   {
     name: "Avanish Pal",
-    pro: "./Team_Profile_Pic/Avanish_Pal.jpeg",
+    pro: "./Team_Profile_Pic/Avanish_Pal.jpg",
     about: "Front End Developer",
     linkedin: "https://www.linkedin.com/in/avanishpal143/",
     git: "https://github.com/avanishpal143",
@@ -219,5 +219,12 @@ let data = [
     linkedin: "https://www.linkedin.com/in/avanish-yadav-089156292/",
     git: "https://github.com/Avanishyadav8175/",
   },
+  {
+    name: "Umang Banerjee",
+    pro: "./Team_Profile_Pic/umang_banerjee.jpg",
+    about: "Front End Developer",
+    linkedin: "https://www.linkedin.com/in/umangbanerjee/",
+    git: "https://github.com/umangbanerjee",
+  }
 ];
 export default data;
